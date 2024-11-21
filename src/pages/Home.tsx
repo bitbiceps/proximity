@@ -4,7 +4,7 @@ import RootLayout from '../layout/RootLayout'
 const Home = () => {
   return (
     <RootLayout>
-      <div>
+      <div className='text-4xl'>
         Home
       </div>
     </RootLayout>
