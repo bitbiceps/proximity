@@ -1,15 +1,15 @@
-import React from 'react'
+
 import { Route, Routes } from 'react-router-dom'
 import { appRoutes } from './utils'
-import Home from './pages/Home'
+import Home from './pages/home/Home'
 
 const App = () => {
   return (
-    <>
-    <Routes>
-      <Route path={appRoutes.root} Component={Home}/>
-    </Routes>
-    </>
+    <div className='font-serif'>
+      <Routes>
+        <Route path={appRoutes.root} Component={Home} />
+      </Routes>
+    </div>
   )
 }
 
