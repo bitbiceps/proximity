@@ -7,9 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'app-gray-1': '#D0D0D04D',
-        'app-gray-2': '#DFDBE9',
-        'app-blue-1':'#2324FA'
+        app:{
+          'gray-1': '#D0D0D04D',
+          'gray-2': '#DFDBE9',
+          'blue-1':'#2324FA',
+          'aqua-1':'#56FEFE'
+        }
       },
       fontFamily: {
         albara: ["Albara Substitute", "Arial", "Helvetica", "sans-serif"],

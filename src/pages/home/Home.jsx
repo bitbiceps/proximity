@@ -2,14 +2,17 @@ import React from 'react'
 import RootLayout from '../../layout/RootLayout'
 import Hero from './Hero'
 import GlobalNews from './GlobalNews'
+import Journals from './Journals'
 
 const Home = () => {
   return (
     <RootLayout>
       <div className=''>
-        <Hero/>
+        <Hero />
         {/* Global News Section */}
-        <GlobalNews/>
+        <GlobalNews />
+        {/* Journey Section */}
+        <Journals />
       </div>
     </RootLayout>
   )
