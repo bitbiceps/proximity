@@ -3,6 +3,8 @@ import RootLayout from '../../layout/RootLayout'
 import Hero from './Hero'
 import GlobalNews from './GlobalNews'
 import Journals from './Journals'
+import WhyChooseUs from './WhyChooseUs'
+import { TailorPR } from './TailorPR'
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
         <GlobalNews />
         {/* Journey Section */}
         <Journals />
+        <WhyChooseUs/>
+        <TailorPR/>
       </div>
     </RootLayout>
   )
