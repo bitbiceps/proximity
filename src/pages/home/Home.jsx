@@ -5,6 +5,7 @@ import GlobalNews from './GlobalNews'
 import Journals from './Journals'
 import WhyChooseUs from './WhyChooseUs'
 import { TailorPR } from './TailorPR'
+import FAQs from '../../components/FAQs'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <Journals />
         <WhyChooseUs/>
         <TailorPR/>
+        <FAQs/>
       </div>
     </RootLayout>
   )
