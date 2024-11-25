@@ -19,6 +19,9 @@ export default {
             1: '#56FEFE',
             2: '#00CDE21A'
           },
+          purple: {
+            1: "#8A62F6"
+          }
         }
       },
       fontFamily: {

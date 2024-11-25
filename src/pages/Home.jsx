@@ -7,6 +7,8 @@ import WhyChooseUs from "../components/WhyChooseUs"
 import TailorPR from "../components/TailorPR/TailorPR"
 import FAQs from "../components/FAQs"
 import BrandsAuthority from '../components/BrandsAuthority'
+import SuccessStory from '../components/SuccessStory'
+import PRStrategy from '../components/PRStrategy'
 
 
 const Home = () => {
@@ -21,6 +23,8 @@ const Home = () => {
         <WhyChooseUs/>
         <TailorPR/>
         <BrandsAuthority/>
+        <SuccessStory/>
+        <PRStrategy/>
         <FAQs/>
       </div>
     </RootLayout>

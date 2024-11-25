@@ -1,0 +1,36 @@
+.btn-text {
+    width: 100%;  /* Ensure it takes up space initially */
+    opacity: 1;
+    visibility: visible;
+    /* transition: opacity 0.1s ease, width 0.1s ease, visibility 0s 0.1s; */
+}
+
+.btn:hover .btn-text {
+    opacity: 0;
+    width: 0;  /* Shrink the width to 0 */
+    visibility: hidden;  /* Remove it from the layout */
+    pointer-events: none;  /* Disable interaction */
+    transition: opacity 0.1s ease, width 0.1s ease, visibility 0s 0.1s;
+}
+
+.btn:hover .btn-icon {
+    width: 100%;  /* Expand the width of the icon */
+    transition: width 0.2s ease;
+}
+
+.btn:hover .btn-icon-text {
+    display: block;  /* Show icon text */
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.1s ease, visibility 0s 0.1s;
+}
+
+.btn-icon-text {
+    display: none;  /* Initially hidden */
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn {
+    transition: all 3s ease;  /* Smooth transition */
+}

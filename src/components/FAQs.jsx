@@ -39,11 +39,11 @@ const FAQs = () => {
 
   return (
     <div>
-      <div className="flex justify-between m-[102px]">
-        <div className="w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex items-center">
+      <div className="flex justify-between   md:m-[102px]  flex-col md:flex-row items-center">
+        <div className="w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center ">
           Frequently Asked Questions
         </div>
-        <div className="w-[70%] flex flex-col  items-center">
+        <div className="w-full md:w-[70%] flex flex-col  items-center">
           {faqData.map((item, index) => (
             <div
               key={index}

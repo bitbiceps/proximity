@@ -18,9 +18,10 @@
 }
 .swiper-pagination {
     position: relative;
-    margin-top: 20px;
+    margin-top: 60px;
     bottom: 0;
     text-align: center;
+    transform: translateX(-120px);
 }
 
 .swiper-pagination-bullet {
@@ -33,8 +34,8 @@
 }
 
 .swiper-pagination-bullet-active {
-    width: 30px; 
-    height: 12px; 
+    width: 60px; 
+    height: 15px; 
     background-color: #2324FA; 
     border-radius: 25px; 
     opacity: 1;
