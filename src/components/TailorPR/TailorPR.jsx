@@ -3,6 +3,7 @@ import image2 from "../../../assets/tailorpr2.png";
 import image3 from "../../../assets/tailorpr3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

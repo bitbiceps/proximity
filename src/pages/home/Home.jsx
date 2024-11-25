@@ -1,11 +1,11 @@
 import React from 'react'
 import RootLayout from '../../layout/RootLayout'
-import Hero from './Hero'
-import GlobalNews from './GlobalNews'
-import Journals from './Journals'
-import WhyChooseUs from './WhyChooseUs'
+import Hero from '../../components/Hero'
+import GlobalNews from '../../components/GlobalNews'
+import Journals from '../../components/Journals'
+import WhyChooseUs from '../../components/WhyChooseUs'
+import TailorPR from '../../components/TailorPR/TailorPR'
 import FAQs from '../../components/FAQs'
-import TailorPR from './TailorPR/TailorPR'
 
 const Home = () => {
   return (

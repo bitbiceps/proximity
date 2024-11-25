@@ -53,7 +53,7 @@ const FAQs = () => {
               {/* Head */}
               <div className="flex justify-between items-center">
                 <div
-                  className="text-[#2C2C2C] text-[18px] font-sans font-normal cursor-pointer"
+                  className="text-[#2C2C2C] font-semibold text-[18px] font-sans cursor-pointer"
                   onClick={() => handleToggle(index)}
                 >
                   {item.head}
