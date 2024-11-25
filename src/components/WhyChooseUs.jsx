@@ -4,6 +4,7 @@ import tailoredApproch from "../assets/tailored-approach.svg"
 import visa from "../assets/visa.svg"
 import inovativeSolution from "../assets/innovative-solutions.svg"
 import tag from "../assets/affordable-pricing.svg"
+import PageHeader from "./PageHeader";
 const WhyChooseUsData1 = [
   {
     image: extensive,
@@ -20,7 +21,7 @@ const WhyChooseUsData1 = [
     head: "Tailored Approach",
     content: "We believe in personalized PR strategies tailored to each client's unique goals, ensuring maximum impact and ROI.",
   },
-  
+
 ];
 const WhyChooseUsData2 = [
   {
@@ -38,20 +39,18 @@ const WhyChooseUsData2 = [
     head: "Affordable Pricing",
     content: "Starting at just £3500 per campaign, you can transform your online presence in dramatic new ways, getting link placements with the best sites online.",
   },
-  
+
 ];
 
 const WhyChooseUs = () => {
   return (
     <div className="mx-[121px] flex flex-col justify-center items-center">
-      <div className="text-[#201446] text-[52px] font-medium font-albara">
-        Why Choose Us
-      </div>
+      <PageHeader label={"Why Choose Us"} />
       {/* content  */}
       <div className="mt-[60px] flex flex-wrap justify-between w-full">
-        
+
         {WhyChooseUsData1.map((item, index) => {
-          return ( 
+          return (
             <div key={index} className="w-[290px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
               <div className="font-medium text-[24px] text-[#161616] text-center mt-[12px]">
@@ -65,9 +64,9 @@ const WhyChooseUs = () => {
         })}
       </div>
       <div className="mt-[60px] flex flex-wrap justify-between w-full">
-        
+
         {WhyChooseUsData2.map((item, index) => {
-          return ( 
+          return (
             <div key={index} className="w-[290px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
               <div className="font-medium text-[24px] text-[#161616] mt-[12px] text-center">

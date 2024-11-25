@@ -43,7 +43,7 @@ const FAQs = () => {
         <div className="w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex items-center">
           Frequently Asked Questions
         </div>
-        <div className="w-[70%] flex flex-col items-center">
+        <div className="w-[70%] flex flex-col  items-center">
           {faqData.map((item, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ const FAQs = () => {
               {/* Head */}
               <div className="flex justify-between items-center">
                 <div
-                  className="text-[#2C2C2C] font-semibold text-[18px] font-sans cursor-pointer"
+                  className="text-app-gray-2 font-semibold text-[18px] font-sans cursor-pointer"
                   onClick={() => handleToggle(index)}
                 >
                   {item.head}

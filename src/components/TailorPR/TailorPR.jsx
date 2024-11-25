@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 
 import "./TailorPR.css"
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import PageHeader from "../PageHeader";
 
 const TailorPRData = [
   { image: image1, title:"PR for Immigration" },
@@ -22,12 +23,9 @@ const TailorPR = () => {
   return (
     <div className="mt-[136px] w-full overflow-hidden">
       {/* Heading */}
-      <div className="text-center text-[52px] text-[#201446] font-albara font-medium">
-        Tailored PR Solutions for Every Need
-      </div>
-
+      <PageHeader label={"Tailored PR Solutions for Every Need"}/>
       {/* Image Section */}
-      <div className="mt-[60px] pl-[200px]">
+      <div className="mt-[60px]">
         <Swiper
           modules={[Pagination]}
           spaceBetween={450}
@@ -55,7 +53,7 @@ const TailorPR = () => {
         >
           {TailorPRData.map((data, idx) => (
             <SwiperSlide key={`tailordata${idx}`}>
-              <div class="card h-[600px] w-[600px] rounded-2xl overflow-hidden cursor-pointer">
+              <div class="card w-full h-[600px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
                 <div class="card__content h-full w-full  text-center relative p-20 transition-transform duration-1000 text-white font-bold rounded-2xl">
                   <div class="card__front rounded-2xl absolute top-0 bottom-0 right-0 left-0">
                     <img src={data.image} alt="Tailord Pr" className="h-full w-full object-cover" />
