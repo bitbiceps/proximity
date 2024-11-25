@@ -21,7 +21,7 @@ export default {
         'map-bg': `url(/src/assets/map.png)`, // Define your custom class
       },
       animation:{
-        'loop-scroll':'loop-scroll 10s linear infinite'
+        'loop-scroll':'loop-scroll 5s linear infinite'
       },
       keyframes:{
         'loop-scroll':{

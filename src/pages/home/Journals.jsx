@@ -18,7 +18,7 @@ const Journals = () => {
             <div className='w-full h-[500px]  bg-app-aqua-1 font-medium flex items-center py-12'>
                 <div className='px-4 md:px-0 flex flex-col justify-center gap-20 h-fit md:ml-28'>
                     <div className='w-full lg:w-[70%] xl:w-[40%]'>
-                        <p className='text-[32px] lg:text-[52px]'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
+                        <p className='text-[32px] lg:text-[52px] font-semibold'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
                     </div>
                     <div className='text-2xl w-fit flex items-center justify-center gap-4'>
                         <p>Enjoy Our Journey</p>
@@ -28,7 +28,7 @@ const Journals = () => {
             </div>
 
             <div className="w-full h-[500px] overflow-hidden">
-                <div className="h-44 bg-app-aqua-1 relative">
+                <div className="h-40 bg-app-aqua-1 relative">
                     <div className="w-full h-fit absolute px-4 top-0 left-0">
                         <div className="flex animate-loop-scroll gap-4">
                             {[...slides, ...slides].map((slide, idx) => (
@@ -47,27 +47,6 @@ const Journals = () => {
                     </div>
                 </div>
             </div>
-
-            {/* <div className='w-full h-[500px]'>
-                <div className='h-44 bg-app-aqua-1 relative'>
-                    <div className='w-full h-fit absolute  px-4 top-0 left-0'>
-                        <div className='animate-loop-scroll grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden'>
-                            {[...slides, ...slides].map((slide, idx) => (
-                                <div
-                                    key={`${slide}-${idx}`}
-                                    className="flex justify-center bg-white"
-                                >
-                                    <img
-                                        src={slide}
-                                        alt={`Article ${idx + 1}`}
-                                        className='h-[300px] object-cover w-full'
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </>
     );
 };

@@ -4,8 +4,8 @@ import Hero from './Hero'
 import GlobalNews from './GlobalNews'
 import Journals from './Journals'
 import WhyChooseUs from './WhyChooseUs'
-import { TailorPR } from './TailorPR'
 import FAQs from '../../components/FAQs'
+import TailorPR from './TailorPR/TailorPR'
 
 const Home = () => {
   return (

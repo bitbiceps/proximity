@@ -1,0 +1,25 @@
+
+.card { 
+    perspective: 1000px;
+}
+.card__content {
+    transform-style: preserve-3d;
+}
+.card:hover .card__content {
+    transform: rotateY(.5turn);}
+
+
+.card__front,
+.card__back { 
+    backface-visibility: hidden;
+}
+.card__back{ 
+    transform: rotateY(.5turn);
+}
+
+
+
+
+.swiper-pagination  {
+    transform: translateY(0px) !important;
+}
