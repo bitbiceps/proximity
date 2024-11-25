@@ -1,14 +1,14 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import digitalJournal from "../../assets/digital_journal.svg";
-import bz from "../../assets/bz.png";
-import indiaToday from "../../assets/india_today.png";
-import cnbc from "../../assets/cnbc.png";
+import digitalJournal from "../assets/digital_journal.svg";
+import bz from "../assets/bz.png";
+import indiaToday from "../assets/india_today.png";
+import cnbc from "../assets/cnbc.png";
 import { Autoplay } from "swiper/modules";
 
-import prev from "../../assets/prev.png";
-import next from "../../assets/next.png";
+import prev from "../assets/prev.png";
+import next from "../assets/next.png";
 
 // Import Swiper styles
 import "swiper/css";

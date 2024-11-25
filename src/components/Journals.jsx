@@ -1,9 +1,9 @@
 import React from 'react';
-import arrowDown from "../../assets/arrow_down.png";
-import article1 from "../../assets/articles/article1.png";
-import article2 from "../../assets/articles/article2.png";
-import article3 from "../../assets/articles/article3.png";
-import article4 from "../../assets/articles/article4.png";
+import arrowDown from "../assets/arrow_down.png";
+import article1 from "../assets/articles/article1.png";
+import article2 from "../assets/articles/article2.png";
+import article3 from "../assets/articles/article3.png";
+import article4 from "../assets/articles/article4.png";
 
 const Journals = () => {
     const slides = [

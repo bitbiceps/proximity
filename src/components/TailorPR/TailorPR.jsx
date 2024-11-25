@@ -1,6 +1,6 @@
-import image1 from "../../../assets/tailorpr1.jpeg";
-import image2 from "../../../assets/tailorpr2.png";
-import image3 from "../../../assets/tailorpr3.png";
+import image1 from "../../assets/tailorpr1.jpeg";
+import image2 from "../../assets/tailorpr2.png";
+import image3 from "../../assets/tailorpr3.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

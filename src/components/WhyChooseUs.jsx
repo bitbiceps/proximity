@@ -1,9 +1,9 @@
-import extensive from "../../assets/extensive-media-reach.svg";
-import check from "../../assets/check-mark.svg"
-import tailoredApproch from "../../assets/tailored-approach.svg"
-import visa from "../../assets/visa.svg"
-import inovativeSolution from "../../assets/innovative-solutions.svg"
-import tag from "../../assets/affordable-pricing.svg"
+import extensive from "../assets/extensive-media-reach.svg";
+import check from "../assets/check-mark.svg"
+import tailoredApproch from "../assets/tailored-approach.svg"
+import visa from "../assets/visa.svg"
+import inovativeSolution from "../assets/innovative-solutions.svg"
+import tag from "../assets/affordable-pricing.svg"
 const WhyChooseUsData1 = [
   {
     image: extensive,
