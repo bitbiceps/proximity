@@ -1,28 +1,22 @@
-import React from 'react'
-import arrowDown from "../../assets/arrow_down.png"
-import article1 from "../../assets/articles/article1.png"
-import article2 from "../../assets/articles/article2.png"
-import article3 from "../../assets/articles/article3.png"
-import article4 from "../../assets/articles/article4.png"
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper/modules';
-import "swiper/css";
-
+import React from 'react';
+import arrowDown from "../../assets/arrow_down.png";
+import article1 from "../../assets/articles/article1.png";
+import article2 from "../../assets/articles/article2.png";
+import article3 from "../../assets/articles/article3.png";
+import article4 from "../../assets/articles/article4.png";
 
 const Journals = () => {
-
     const slides = [
         article1,
         article2,
         article3,
         article4,
-        article1,
     ];
+
     return (
         <>
-            <div className='w-full h-[568px] lg:h-[620px] bg-app-aqua-1 font-medium flex items-start py-12'>
-                <div className='px-4 md:px-0 flex flex-col justify-center  gap-20 h-fit md:ml-28'>
+            <div className='w-full h-[500px]  bg-app-aqua-1 font-medium flex items-center py-12'>
+                <div className='px-4 md:px-0 flex flex-col justify-center gap-20 h-fit md:ml-28'>
                     <div className='w-full lg:w-[70%] xl:w-[40%]'>
                         <p className='text-[32px] lg:text-[52px]'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
                     </div>
@@ -33,46 +27,49 @@ const Journals = () => {
                 </div>
             </div>
 
-            <div className='w-full -translate-y-48  md:-translate-y-36'>
-                <Swiper
-                    modules={[Autoplay]}
-                    autoplay={{
-                        delay: 0,
-                        disableOnInteraction: false,
-                    }}
-                    speed={1500}
-                    spaceBetween={20}
-                    loop={true}
-                    className="w-full"
-                    breakpoints={{
-                        // Default for mobile
-                        0: {
-                            slidesPerView: 1,
-                        },
-                        // For tablets (640px)
-                        640: {
-                            slidesPerView: 2,
-                        },
-                        // For desktops (1024px)
-                        1024: {
-                            slidesPerView: 4,
-                        },
-                    }}
-                >
-                    {slides.map((slide,idx) => (
-                        <SwiperSlide key={slide + idx } className="flex justify-center bg-white">
-                            <img
-                                src={slide}
-                                alt={'Article'}
-                                className='h-[320px] object-cover w-full'
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+            <div className="w-full h-[500px] overflow-hidden">
+                <div className="h-44 bg-app-aqua-1 relative">
+                    <div className="w-full h-fit absolute px-4 top-0 left-0">
+                        <div className="flex animate-loop-scroll gap-4">
+                            {[...slides, ...slides].map((slide, idx) => (
+                                <div
+                                    key={`${slide}-${idx}`}
+                                    className="flex-shrink-0 bg-white h-[320px] w-[400px]"
+                                >
+                                    <img
+                                        src={slide}
+                                        alt={`Article ${idx + 1}`}
+                                        className="h-full w-full object-cover"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            {/* <div className='w-full h-[500px]'>
+                <div className='h-44 bg-app-aqua-1 relative'>
+                    <div className='w-full h-fit absolute  px-4 top-0 left-0'>
+                        <div className='animate-loop-scroll grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden'>
+                            {[...slides, ...slides].map((slide, idx) => (
+                                <div
+                                    key={`${slide}-${idx}`}
+                                    className="flex justify-center bg-white"
+                                >
+                                    <img
+                                        src={slide}
+                                        alt={`Article ${idx + 1}`}
+                                        className='h-[300px] object-cover w-full'
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div> */}
         </>
+    );
+};
 
-    )
-}
-
-export default Journals
+export default Journals;

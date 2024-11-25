@@ -20,7 +20,15 @@ export default {
       backgroundImage: {
         'map-bg': `url(/src/assets/map.png)`, // Define your custom class
       },
-
+      animation:{
+        'loop-scroll':'loop-scroll 10s linear infinite'
+      },
+      keyframes:{
+        'loop-scroll':{
+          from:{transform:'translateX(0)'},
+          to:{transform:'translateX(calc(-50% - 20px))'}
+        }
+      }
     },
   },
   plugins: [],

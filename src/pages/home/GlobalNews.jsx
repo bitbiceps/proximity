@@ -5,6 +5,7 @@ import digitalJournal from "../../assets/digital_journal.svg";
 import bz from "../../assets/bz.png";
 import indiaToday from "../../assets/india_today.png";
 import cnbc from "../../assets/cnbc.png";
+import { Autoplay } from "swiper/modules";
 
 import prev from "../../assets/prev.png";
 import next from "../../assets/next.png";
@@ -33,7 +34,7 @@ const GlobalNews = () => {
             </p>
 
             {/* Flex container for buttons and Swiper */}
-            <div className="flex justify-between items-center w-[85%] mx-auto">
+            <div className="w-full flex justify-between items-center md:w-[85%] mx-auto">
                 {/* Previous Button */}
                 <button ref={prevRef} aria-label="Previous">
                     <img src={prev} alt="Prev" />
@@ -42,9 +43,14 @@ const GlobalNews = () => {
                 {/* Swiper Carousel */}
                 <div className="w-full md:w-[75%]">
                     <Swiper
-                        modules={[Navigation, Pagination]}
+                        modules={[Navigation, Pagination,Autoplay]}
                         spaceBetween={30}
                         loop={true}
+                        autoplay={{
+                            delay: 1500,
+                            disableOnInteraction: false,
+                        }}
+                        speed={1000}
                         className="w-full"
                         navigation={{
                             prevEl: prevRef.current,
