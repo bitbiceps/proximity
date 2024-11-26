@@ -15,6 +15,7 @@ export default {
           blue: {
             1: '#2324FA',
             2:'#72C2F7',
+            blend:'#2324FA1A'
           },
           aqua: {
             1: '#56FEFE',
@@ -22,7 +23,8 @@ export default {
             3:'#72C2F7'
           },
           purple: {
-            1: "#8A62F6"
+            1: "#8A62F6",
+            2:'#5152FF'
           }
         }
       },
