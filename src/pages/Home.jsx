@@ -15,17 +15,17 @@ const Home = () => {
   return (
     <RootLayout>
       <div className=''>
-        <Hero />
+        <Hero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
         {/* Global News Section */}
         <GlobalNews />
         {/* Journey Section */}
         <Journals />
-        <WhyChooseUs/>
-        <TailorPR/>
-        <BrandsAuthority/>
-        <SuccessStory/>
-        <PRStrategy/>
-        <FAQs/>
+        <WhyChooseUs />
+        <TailorPR />
+        <BrandsAuthority />
+        <SuccessStory />
+        <PRStrategy />
+        <FAQs />
       </div>
     </RootLayout>
   )
