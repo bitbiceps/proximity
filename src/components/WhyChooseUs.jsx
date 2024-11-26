@@ -21,7 +21,6 @@ const WhyChooseUsData1 = [
     head: "Tailored Approach",
     content: "We believe in personalized PR strategies tailored to each client's unique goals, ensuring maximum impact and ROI.",
   },
-
 ];
 const WhyChooseUsData2 = [
   {
@@ -39,7 +38,6 @@ const WhyChooseUsData2 = [
     head: "Affordable Pricing",
     content: "Starting at just £3500 per campaign, you can transform your online presence in dramatic new ways, getting link placements with the best sites online.",
   },
-
 ];
 
 const WhyChooseUs = () => {
