@@ -5,15 +5,16 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 const Button = () => {
     return (
-        <button className="btn border-none outline-none bg-white flex items-center justify-center w-[160px] rounded-full p-1">
-            <span className="btn-text w-full text-black">
-                Get Started
-            </span>
-            <span className="btn-icon w-fit bg-app-aqua-1 text-black h-full rounded-full p-4 flex items-center justify-between">
-                <p className='btn-icon-text'>Get Started</p>
-                <FaArrowRight />
-            </span>
-        </button>
+<button className="btn border-none outline-none bg-white flex items-center justify-center w-[160px] rounded-full relative h-[60px]">
+    <span className="z-10 btn-text w-full text-black absolute top-0 left-0 h-full flex justify-start items-center pl-2">
+        Get Started
+    </span>
+    <span className="z-20 btn-icon w-fit bg-app-aqua-1 h-fit text-black rounded-full p-4 flex items-center justify-between absolute right-1">
+        <p className="btn-icon-text">Get Started</p>
+        <FaArrowRight />
+    </span>
+</button>
+
     )
 }
 

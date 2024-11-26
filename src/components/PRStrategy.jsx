@@ -4,8 +4,8 @@ import Button from './Button/Button'
 
 const PRStrategy = () => {
     return (
-        <div className='flex bg-app-purple-1 items-center justify-center'>
-            <div className='w-1/3 flex flex-col text-white gap-10 justify-start items-start translate-x-[140px]'>
+        <div className='flex flex-col md:flex-row bg-app-purple-1 items-center justify-center'>
+            <div className='w-full p-4 justify-center items-center md:w-1/3 flex flex-col text-white gap-10 md:justify-start md:items-start md:translate-x-[140px]'>
                 <p className='text-7xl w-[90%] text-white'>
                     Ready to Elevate
                     Your PR Strategy?
