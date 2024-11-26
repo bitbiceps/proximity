@@ -6,6 +6,7 @@ import "./App.css"
 import FAQPage from './pages/FAQPage'
 import PressReleases from './pages/PressReleases'
 import InnerCountry from './pages/InnerCountry'
+import ProductPricing from './pages/ProductPricing'
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
         <Route exact path={appRoutes.root} Component={Home} />
         <Route path={appRoutes.faq} Component={FAQPage} />
         <Route path={appRoutes.press_releases} Component={PressReleases} />
-        <Route path={appRoutes.inner_country} Component={InnerCountry} />
+        <Route path={appRoutes.inner_country.static} Component={InnerCountry} />
+        <Route path={appRoutes.root} Component={Home} />
+        <Route path={appRoutes.productPricing} Component={ProductPricing} />
       </Routes>
     </div>
   )
