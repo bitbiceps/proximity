@@ -29,7 +29,7 @@ const faqData = [
   },
 ];
 
-const FAQs = () => {
+const FAQs = ({inner}) => {
   const [openIndex, setOpenIndex] = useState(0); // Default to the first FAQ being open
 
   const handleToggle = (index) => {
@@ -39,7 +39,7 @@ const FAQs = () => {
 
   return (
     <div>
-      <div className="flex justify-between   md:m-[102px]  flex-col md:flex-row items-center">
+      <div className={`flex justify-between ${!inner && 'md:m-[102px]'} flex-col md:flex-row items-center`}>
         <div className="w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center ">
           Frequently Asked Questions
         </div>

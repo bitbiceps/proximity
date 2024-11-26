@@ -15,7 +15,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const GlobalNews = () => {
+const GlobalNews = ({ innerPage }) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
@@ -28,13 +28,17 @@ const GlobalNews = () => {
     ];
 
     return (
-        <div className="w-full py-36">
-            <p className="text-app-blue-1 text-[62px] font-bold text-center mb-14">
-                Get Featured on Global News Sites
-            </p>
+        <div className={`w-full ${!innerPage && 'py-36'}`}>
+
+            {!innerPage && (
+                < p className="text-app-blue-1 text-[62px] font-bold text-center mb-14">
+                    Get Featured on Global News Sites
+                </p>
+
+            )}
 
             {/* Flex container for buttons and Swiper */}
-            <div className="w-full flex justify-between items-center md:w-[85%] mx-auto">
+            <div className={`w-full flex justify-between items-center ${innerPage ? 'md:w-[100%]' : 'md:w-[85%]'} mx-auto`}>
                 {/* Previous Button */}
                 <button ref={prevRef} aria-label="Previous">
                     <img src={prev} alt="Prev" />
@@ -43,7 +47,7 @@ const GlobalNews = () => {
                 {/* Swiper Carousel */}
                 <div className="w-full md:w-[75%]">
                     <Swiper
-                        modules={[Navigation, Pagination,Autoplay]}
+                        modules={[Navigation, Pagination, Autoplay]}
                         spaceBetween={30}
                         loop={true}
                         autoplay={{
@@ -93,7 +97,7 @@ const GlobalNews = () => {
                     <img src={next} alt="Next" />
                 </button>
             </div>
-        </div>
+        </div >
     );
 };
 

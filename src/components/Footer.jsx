@@ -47,7 +47,7 @@ const Footer = () => {
             />
 
             {/* Submit button */}
-            <button className="w-[50px] h-full bg-[#8A62F6] text-[#D6D6D6] text-[16px] font-bold rounded-r-md flex justify-center items-centerk">
+            <button className="w-[50px] h-full bg-[#8A62F6] text-[#D6D6D6] text-[16px] font-bold rounded-r-md flex justify-center items-center">
               <img src={arrow} ></img>
             </button>
           </div>

@@ -101,7 +101,6 @@ const PressReleases = () => {
                             text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
                         />
                     </div>
-
                 </div>
             </div>
         </RootLayout>

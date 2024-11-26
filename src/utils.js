@@ -1,7 +1,8 @@
 export const appRoutes = {
     root: "/",
     faq: "/frequently-asked-questions",
-    press_releases:'/press-releases'
+    press_releases:'/press-releases',
+    inner_country:'/country/:countryName'
 }
 
 
