@@ -77,12 +77,23 @@ const VisaGoal = () => {
                 key={index}
                 className="flex justify-evenly bg-white text-purple-500 p-4 rounded-lg shadow-md text-center"
               >
-                <div className="w-18 h-18 p-2 flex justify-center items-center border-2 border-purple-500 rounded-full mx-auto">
-                  <div className="w-16 h-16 p-2 flex justify-center items-center bg-purple-500 rounded-full">
+                <div
+                  className="w-18 h-18 p-2 flex justify-center items-center border-2  rounded-full mx-auto"
+                  style={{ borderColor: "#8A62F6" }}
+                >
+                  <div
+                    className="w-16 h-16 p-2 flex justify-center items-center rounded-full"
+                    style={{ backgroundColor: "#8A62F6" }}
+                  >
                     {feature.icon}
                   </div>
                 </div>
-                <h3 className="text-lg font-semibold">{feature.title}</h3>
+                <h3
+                  className="text-lg font-semibold"
+                  style={{ color: "#8A62F6" }}
+                >
+                  {feature.title}
+                </h3>
               </div>
             ))}
           </div>

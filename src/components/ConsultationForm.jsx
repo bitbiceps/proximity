@@ -71,10 +71,11 @@ const ConsultationForm = () => {
             />
           </div>
 
-          <div className="flex justify-center">
+          <div className=" flex justify-center">
             <button
               type="submit"
-              className="w-full bg-blue-400 hover:bg-blue-500 text-black font-semibold text-lg py-3 px-12 rounded-full shadow-md transition duration-200"
+              className="text-xl w-full bg-blue-400 hover:bg-blue-500 text-black font-semibold text-lg py-3 px-12 rounded-full shadow-md transition duration-200"
+              style={{ background: "#72C2F7" }}
             >
               SUBMIT
             </button>
