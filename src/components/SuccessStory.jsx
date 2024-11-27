@@ -69,7 +69,7 @@ const SuccessStory = () => {
                 >
                     {slides.map((data, idx) => (
                         <SwiperSlide key={`successstories${idx}`}>
-                            <div className='flex items-center justify-center w-fit h-fit  md:h-[400px] gap-8 flex-col md:flex-row'>
+                            <div className='flex items-center justify-center w-fit h-fit  md:h-fit gap-8 flex-col md:flex-row'>
                                 <div className='h-fit w-full md:w-fit  relative rounded-2xl overflow-hidden'>
                                     <img src={data} alt="Success" className=' object-cover' />
                                 </div>
