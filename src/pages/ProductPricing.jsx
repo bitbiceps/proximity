@@ -1,8 +1,7 @@
 import React from 'react';
 import RootLayout from '../layout/RootLayout';
 import Hero from '../components/common/Hero';
-// import Timeline from '../components/Timeline';
-import EligibilityCriteria from '../components/Timeline';
+import EligibilityCriteria from '../components/EligibilityCriteria';
 import VisaCard from '../components/VisaCard';
 import OClassification from '../components/OClassification';
 import FAQs from '../components/common/FAQs';
