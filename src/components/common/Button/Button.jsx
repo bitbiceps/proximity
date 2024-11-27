@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 const Button = ({ text, width = "150px" }) => {
     return (
-        <button style={{ width }} className="btn border-none outline-none bg-white flex items-center justify-center w-[160px] rounded-full relative h-[60px]">
+        <button style={{ width }} className="btn border-none outline-none bg-white flex items-center justify-center w-[180px] rounded-full relative h-[60px]">
             <span className="z-10 btn-text w-full text-app-blue-1 absolute top-0 left-0 h-full flex justify-start items-center pl-2">
                 {text || 'Get Started'}
             </span>
