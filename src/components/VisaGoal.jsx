@@ -100,7 +100,7 @@ const VisaGoal = () => {
           </div>
 
           <div className="text-center md:text-left mt-8">
-            <Button width="180px" text={"Explore in detail"}/>
+            <Button width="180px" text={"Explore in detail"} />
           </div>
         </div>
 

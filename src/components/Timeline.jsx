@@ -86,7 +86,7 @@ const EligibilityCriteria = () => {
                 that academic area. You must be entering the United States in
                 order to pursue tenure or tenure track teaching or a comparable
                 research position at a university, institution of higher
-                education, or private employer. 
+                education, or private employer.
               </td>
               <td className="text-xl border border-blue-600 px-4 py-6 text-center align-top leading-relaxed">
                 You must meet at least 2 of the 6 criteria listed below** and
@@ -110,7 +110,7 @@ const EligibilityCriteria = () => {
                 for the U.S. petitioning employer. The U.S. petitioner must have
                 been doing business for at least 1 year, have a qualifying
                 relationship to the entity you worked for outside the U.S., and
-                intend to employ you in a managerial or executive capacity. 
+                intend to employ you in a managerial or executive capacity.
               </td>
               <td className="text-xl border border-blue-600 px-4 py-6 text-center align-top leading-relaxed">
                 Your petitioning employer must be a U.S. employer and intend to

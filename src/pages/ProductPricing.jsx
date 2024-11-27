@@ -11,6 +11,7 @@ import VisaCategories from '../components/VisaCategories';
 import VisaGoal from '../components/VisaGoal';
 import Flow from '../components/Flow';
 import OneToOneHelpForm from '../components/common/OneToOneHelpForm';
+
 const ProductPricing = () => {
     return (
         <RootLayout>
@@ -21,7 +22,7 @@ const ProductPricing = () => {
             <VisaCard />
             <OClassification />
             <VisaGoal />
-            <Feedback/>
+            <Feedback />
             <FAQs />
             <OneToOneHelpForm />
         </RootLayout>

@@ -29,7 +29,7 @@ const faqData = [
   },
 ];
 
-const FAQs = ({inner}) => {
+const FAQs = ({ inner }) => {
   const [openIndex, setOpenIndex] = useState(0); // Default to the first FAQ being open
 
   const handleToggle = (index) => {
@@ -63,7 +63,7 @@ const FAQs = ({inner}) => {
                     src={openIndex === index ? upArrow : downArrow}
                     alt="Toggle arrow"
                     className="cursor-pointer"
-                    
+
                   />
                 </div>
               </div>

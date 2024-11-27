@@ -1,5 +1,4 @@
 import React from 'react'
-import PageHeader from './common/PageHeader'
 import SupportCard from './SupportCard'
 
 const HowWeSupport = () => {
@@ -13,7 +12,6 @@ const HowWeSupport = () => {
                 <SupportCard />
                 <SupportCard />
             </div>
-
         </div>
     )
 }

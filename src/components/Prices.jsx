@@ -12,7 +12,6 @@ const Prices = () => {
                 <PriceCard />
                 <PriceCard />
             </div>
-
         </div>
     )
 }

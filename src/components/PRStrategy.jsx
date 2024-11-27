@@ -14,7 +14,7 @@ const PRStrategy = () => {
                     Contact us today to schedule a consultation and discover how Proximity can help you achieve your PR goals and stand out in
                     the crowded media landscape.
                 </p>
-                <Button/>
+                <Button />
             </div>
             <div className='w-2/3'>
                 <img src={devices} alt="Device" />

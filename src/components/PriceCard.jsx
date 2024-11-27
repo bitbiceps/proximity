@@ -24,7 +24,7 @@ const PriceCard = () => {
                 </ul>
             </div>
             <div className='mt-6'>
-                <Button text={"Explore in Detail"} width='190px'  />
+                <Button text={"Explore in Detail"} width='190px' />
             </div>
         </div>
     )

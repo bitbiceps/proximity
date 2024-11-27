@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 
-const Dropdown = ({ options, isOpen, setIsOpen, label, width="fit" }) => {
+const Dropdown = ({ options, isOpen, setIsOpen, label, width = "fit" }) => {
 
     return (
         <div className="relative text-2xl w-fit">
