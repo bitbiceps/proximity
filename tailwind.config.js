@@ -35,6 +35,7 @@ export default {
       },
       backgroundImage: {
         'map-bg': `url(/src/assets/map.png)`, // Define your custom class
+        // 'vdo-bg': `url(/src/assets/home.mp4)`
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite'

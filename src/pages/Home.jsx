@@ -1,6 +1,6 @@
 import React from 'react'
 import RootLayout from "../layout/RootLayout"
-import Hero from "../components/common/Hero"
+import HomeHero from "../components//HomeHero"
 import GlobalNews from "../components/common/GlobalNews"
 import Journals from "../components/common/Journals"
 import WhyChooseUs from "../components/WhyChooseUs"
@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <RootLayout>
       <div className=''>
-        <Hero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
+        <HomeHero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
         {/* Global News Section */}
         <GlobalNews />
         {/* Journey Section */}
