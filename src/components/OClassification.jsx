@@ -8,10 +8,9 @@ const OClassification = () => {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl">
-        {/* O-1A */}
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
-            <p className="text-xl font-bold text-gray-800">O-1A</p>
+          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center font-sans justify-center border-2 border-cyan-500 rounded-full mb-4">
+            <p className="text-2xl font-bold text-gray-800">0-1A</p>
           </div>
           <p className="text-gray-700">
             Individuals with an extraordinary ability in the sciences,
@@ -20,10 +19,9 @@ const OClassification = () => {
           </p>
         </div>
 
-        {/* O-1B */}
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
-            <p className="text-xl font-bold text-gray-800">O-1B</p>
+          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center font-sans justify-center border-2 border-cyan-500 rounded-full mb-4">
+            <p className="text-2xl font-bold text-gray-800">0-1B</p>
           </div>
           <p className="text-gray-700">
             Individuals with an extraordinary ability in the arts or
@@ -31,10 +29,9 @@ const OClassification = () => {
           </p>
         </div>
 
-        {/* O-2 */}
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
-            <p className="text-xl font-bold text-gray-800">O-2</p>
+          <div className="hover:bg-cyan-500 w-32 h-32 flex font-sans items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
+            <p className="text-2xl font-bold text-gray-800">0-2</p>
           </div>
           <p className="text-gray-700">
             Individuals who will accompany an O–1 artist or athlete to assist in
@@ -42,10 +39,9 @@ const OClassification = () => {
           </p>
         </div>
 
-        {/* O-3 */}
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
-            <p className="text-xl font-bold text-gray-800">O-3</p>
+          <div className="hover:bg-cyan-500 w-32 h-32 flex font-sans items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
+            <p className="text-2xl font-bold text-gray-800">0-3</p>
           </div>
           <p className="text-gray-700">
             Individuals who are the spouse or children of O–1 and O–2 visa
@@ -54,9 +50,8 @@ const OClassification = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="-ml-[800px] mt-16 text-left">
-        <p className="text-gray-700 text-2xl">
+        <p className=" text-2xl">
           For more details check out{" "}
           <a
             href="https://www.uscis.gov"
