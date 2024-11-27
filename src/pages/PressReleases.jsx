@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import RootLayout from '../layout/RootLayout'
-import Hero from '../components/Hero'
+import Hero from '../components/common/Hero'
 import { AiOutlineSearch } from "react-icons/ai";
-import Dropdown from '../components/DropDown';
+import Dropdown from '../components/common/DropDown';
 import { RxCross2 } from "react-icons/rx";
 import Article from '../components/Article';
 import article1 from "../assets/articles/article1.png"
@@ -45,7 +45,7 @@ const PressReleases = () => {
                 <div className='flex justify-start h-[45px] gap-4 mt-[40px]'>
                     {chips.map(chip => (
                         <>
-                            <div className=' flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'>
+                            <div key={chip} className=' flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'>
                                 <p className='text-sm font-bold'>{chip}</p>
                                 <RxCross2 className='text-xl cursor-pointer' />
                             </div>

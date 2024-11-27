@@ -1,6 +1,6 @@
 import React from 'react'
 import borderDashed from "../assets/dashed-border.png"
-import Button from './Button/Button'
+import Button from './common/Button/Button'
 
 const PriceCard = () => {
     return (

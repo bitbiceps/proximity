@@ -1,16 +1,16 @@
 import React from 'react';
 import RootLayout from '../layout/RootLayout';
-import Hero from '../components/Hero';
-import Timeline from '../components/Timeline';
+import Hero from '../components/common/Hero';
+// import Timeline from '../components/Timeline';
 import EligibilityCriteria from '../components/Timeline';
 import VisaCard from '../components/VisaCard';
 import OClassification from '../components/OClassification';
-import FAQs from '../components/FAQs';
-import Feedback from '../components/Feedback';
+import FAQs from '../components/common/FAQs';
+import Feedback from '../components/common/Feedback';
 import VisaCategories from '../components/VisaCategories';
 import VisaGoal from '../components/VisaGoal';
 import Flow from '../components/Flow';
-import OneToOneHelpForm from '../components/OneToOneHelpForm';
+import OneToOneHelpForm from '../components/common/OneToOneHelpForm';
 const ProductPricing = () => {
     return (
         <RootLayout>

@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../assets/logo.svg"
-import { appRoutes, headerLinks } from '../utils'
+import logo from "../../assets/logo.svg"
+import { appRoutes, headerLinks } from '../../utils'
 import { Link } from 'react-router-dom'
 import { CiMenuFries } from "react-icons/ci";
 
@@ -20,9 +20,9 @@ const Header = () => {
             </div>
           </Link>
           <div className='w-fit hidden gap-10 justify-center items-center text-[14px]  font-serif font-semibold md:flex'>
-            {headerLinks.map(item => (
+            {headerLinks.map((item, idx) => (
               <>
-                <Link to={item.to} className='cursor-pointer'>
+                <Link key={item.label} to={item.to} className='cursor-pointer'>
                   {item.label}
                 </Link>
               </>

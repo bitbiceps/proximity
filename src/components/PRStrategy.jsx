@@ -1,6 +1,6 @@
 import React from 'react'
 import devices from "../assets/devices.png"
-import Button from './Button/Button'
+import Button from './common/Button/Button'
 
 const PRStrategy = () => {
     return (

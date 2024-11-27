@@ -1,6 +1,6 @@
 import React from 'react'
 import PhoneCard from './PhoneCard'
-import PageHeader from './PageHeader'
+import PageHeader from './common/PageHeader'
 
 const BrandsAuthority = () => {
   return (

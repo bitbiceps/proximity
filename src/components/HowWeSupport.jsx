@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHeader from './PageHeader'
+import PageHeader from './common/PageHeader'
 import SupportCard from './SupportCard'
 
 const HowWeSupport = () => {

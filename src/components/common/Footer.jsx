@@ -1,9 +1,9 @@
-import logo from "../assets/footer-logo.svg";
-import linkedin from "../assets/linkedIn.svg"
-import insta from "../assets/insta.svg"
-import x from "../assets/x.svg"
-import c from "../assets/copy-right.svg"
-import arrow from "../assets/right-arrow.svg"
+import logo from "../../assets/footer-logo.svg";
+import linkedin from "../../assets/linkedIn.svg"
+import insta from "../../assets/insta.svg"
+import x from "../../assets/x.svg"
+import c from "../../assets/copy-right.svg"
+import arrow from "../../assets/right-arrow.svg"
 const Footer = () => {
   return (
     <div className="bg-[#000000] w-full  py-[52px] mt-[92px]">

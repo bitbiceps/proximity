@@ -14,7 +14,7 @@ import "swiper/css/pagination";
 
 
 import "./TailorPR.css"
-import PageHeader from "../PageHeader";
+import PageHeader from "../common/PageHeader";
 import image1 from "../../assets/tailorpr1.jpeg";
 import image2 from "../../assets/tailorpr2.png";
 import image3 from "../../assets/tailorpr3.png";
@@ -40,7 +40,7 @@ const TailorPR = () => {
             <FaArrowLeft />
           </div>
           <div ref={nextRef} className="flex justify-center items-center w-fit h-fit text-2xl text-gray-400 border-gray-400  hover:text-app-blue-1 border-2 rounded-full hover:border-app-blue-1 p-2 cursor-pointer transition-colors">
-            <FaArrowRight  />
+            <FaArrowRight />
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import RootLayout from '../layout/RootLayout'
-import Hero from '../components/Hero'
-import FAQs from '../components/FAQs'
-import OneToOneHelpForm from '../components/OneToOneHelpForm'
+import Hero from '../components/common/Hero'
+import FAQs from '../components/common/FAQs'
+import OneToOneHelpForm from '../components/common/OneToOneHelpForm'
 
 const FAQPage = () => {
   return (
@@ -13,5 +13,4 @@ const FAQPage = () => {
     </RootLayout>
   )
 }
-
 export default FAQPage

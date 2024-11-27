@@ -1,5 +1,5 @@
 import React from 'react';
-import vector from "../assets/vector.png";
+import vector from "../../assets/vector.png";
 
 const FeedBackCard = () => {
     const fullStars = Math.floor(4); // Number of full stars

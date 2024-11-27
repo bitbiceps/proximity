@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
-import PageHeader from './PageHeader';
+import PageHeader from './common/PageHeader';
 import man from "../assets/man.png"
 import girl from "../assets/girl.png"
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import upArrow from "../assets/up-arrow-faq.svg";
-import downArrow from "../assets/down-arrow-faq.svg";
+import upArrow from "../../assets/up-arrow-faq.svg";
+import downArrow from "../../assets/down-arrow-faq.svg";
 
 const faqData = [
   {
