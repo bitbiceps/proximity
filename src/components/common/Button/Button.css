@@ -1,0 +1,66 @@
+.btn {
+    transition: all 0.3s ease; /* Smooth transition for the entire button */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    background-color: white;
+    border: none;
+    border-radius: 9999px; /* Fully rounded */
+}
+
+
+.btn-text {
+    width: 100%; /* Full width initially */
+    font-size: 16px; /* Regular font size */
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px; /* Left padding for alignment */
+    transition: opacity 0.3s ease, width 0.3s ease, font-size 0.3s ease, visibility 0s 0.3s; /* Grouped transitions */
+}
+
+.btn-icon {
+    width: 45px; /* Set an explicit initial width */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    color: black;
+    padding: 14px;
+    border-radius: 9999px; /* Fully rounded */
+    transition: width 0.3s ease, opacity 0.3s ease; /* Transition for width and opacity */
+}
+
+.btn:hover .btn-icon {
+    width: 94.5%; /* Expand the width on hover */
+}
+
+.btn:hover .btn-text {
+    opacity: 0;
+    width: 0; /* Shrink to zero width */
+    font-size: 0; /* Shrink font size to zero */
+    visibility: hidden; /* Hide text */
+}
+
+.btn-icon-text {
+    margin-right: 5px; /* Space between text and icon */
+    opacity: 0;
+    font-size: 0;
+    visibility: hidden; /* Make it invisible initially */
+    transition: opacity 0.3s ease, font-size 0.3s ease, visibility 0s 0.3s; /* Grouped transitions */
+}
+
+.btn:hover .btn-icon-text {
+    opacity: 1; /* Smoothly fade in */
+    font-size: 16px; /* Restore the font size */
+    visibility: visible; /* Make it visible */
+}
