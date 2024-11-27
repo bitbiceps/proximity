@@ -70,11 +70,11 @@ const SuccessStory = () => {
                     {slides.map((data, idx) => (
                         <SwiperSlide key={`successstories${idx}`}>
                             <div className='flex items-center justify-center w-fit h-fit  md:h-[400px] gap-8 flex-col md:flex-row'>
-                                <div className='h-[500px] w-full md:w-[400px] md:h-full relative rounded-2xl overflow-hidden'>
-                                    <img src={data} alt="Success" className='absolute inset-0 h-full w-full object-cover' />
+                                <div className='h-fit w-full md:w-fit  relative rounded-2xl overflow-hidden'>
+                                    <img src={data} alt="Success" className=' object-cover' />
                                 </div>
                                 <div className='w-full md:w-[300px]'>
-                                    <p className='border-b border-black pb-1 text-2xl font-semibold clear-start mb-10'>
+                                    <p className='border-b border-app-gray-3 pb-1 text-2xl font-semibold clear-start mb-10'>
                                         Lorem Ipsum
                                     </p>
                                     <p className='text-[#232323] text-lg font-thin'>
