@@ -13,7 +13,7 @@ const PhoneCard = ({ label, text }) => {
                         {text}
                     </p>
                 </div>
-                <div className='bg-app-aqua-2 rounded-t-2xl pt-5'>
+                <div className='bg-app-aqua-2 rounded-t-2xl pt-5 h-fit'>
                     <img src={phone} alt="Phone" className='translate-y-36 object-contain w-[85%] mx-auto cursor-pointer hover:translate-y-0 transition-transform duration-500' />
                 </div>
             </div>

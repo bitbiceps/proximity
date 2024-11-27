@@ -42,35 +42,35 @@ const WhyChooseUsData2 = [
 
 const WhyChooseUs = () => {
   return (
-    <div className="mx-[121px] flex flex-col justify-center items-center">
+    <div className="w-full md:w-[80vw] mx-auto flex flex-col justify-center items-center">
       <PageHeader label={"Why Choose Us"} />
       {/* content  */}
-      <div className="mt-[60px] flex flex-wrap justify-between w-full">
+      <div className="mt-[60px] flex flex-wrap justify-center md:justify-between w-full">
 
         {WhyChooseUsData1.map((item, index) => {
           return (
             <div key={index} className="w-[290px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
-              <div className="font-medium text-[24px] text-[#161616] text-center mt-[12px]">
+              <div className="font-medium text-[28px]  text-center mt-[12px]">
                 {item.head}
               </div>
-              <div className="font-normal text-[16px] text-[#444444] leading-[24px] text-center mt-[12px]">
+              <div className="font-normal text-[20px] text-[#444444] leading-[24px] text-center mt-[12px]">
                 {item.content}
               </div>
             </div>
           );
         })}
       </div>
-      <div className="mt-[60px] flex flex-wrap justify-between w-full">
+      <div className="mt-[60px] flex flex-wrap justify-center md:justify-between w-full">
 
         {WhyChooseUsData2.map((item, index) => {
           return (
             <div key={index} className="w-[290px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
-              <div className="font-medium text-[24px] text-[#161616] mt-[12px] text-center">
+              <div className="font-medium text-[28px] text-[#161616] mt-[12px] text-center">
                 {item.head}
               </div>
-              <div className="font-normal text-[16px] text-[#444444] leading-[24px] mt-[12px] text-center">
+              <div className="font-normal text-[20px] text-[#444444] leading-[24px] mt-[12px] text-center">
                 {item.content}
               </div>
             </div>
