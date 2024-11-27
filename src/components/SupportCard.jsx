@@ -2,7 +2,7 @@ import React from 'react'
 
 const SupportCard = () => {
     return (
-        <div className='h-full w-[400px] bg-app-blue-1 rounded-2xl text-left p-8 cursor-pointer'>
+        <div className='h-[480px] w-[400px] bg-app-blue-1 rounded-2xl text-left p-8 cursor-pointer'>
             <p className='text-white text-2xl mb-4'>
                 Publication in Professional or Major Media Outlets
             </p>

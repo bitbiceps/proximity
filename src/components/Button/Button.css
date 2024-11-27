@@ -4,12 +4,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 55px;
+    height: 58px;
     background-color: white;
     border: none;
     border-radius: 9999px; /* Fully rounded */
 }
+
 
 .btn-text {
     width: 100%; /* Full width initially */

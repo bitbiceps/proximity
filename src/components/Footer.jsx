@@ -7,7 +7,7 @@ import arrow from "../assets/right-arrow.svg"
 const Footer = () => {
   return (
     <div className="bg-[#000000] w-full  py-[52px] mt-[92px]">
-      <div className="mx-[182px] flex justify-between flex-wrap flex-col md:flex-row items-start pb-[24px]  border-b-gray-600 border-b-[1px] ">
+      <div className="mx-12 lg:mx-[182px] flex justify-between flex-wrap flex-col md:flex-row items-start pb-[24px]  border-b-gray-600 border-b-[1px] ">
         <div>
           <img src={logo}></img>
           <div className="mt-[32px] font-medium text-[#FFFFFF] text-[16px]">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mx-[182px] mt-[24px] ">
+      <div className="flex justify-between mx-12 lg:mx-[182px] mt-[24px] ">
         <div className="flex gap-[10px]">
           <div className=" h-[35px] w-[35px] rounded-full border-[#FFFFFF33] border-[1.5px] flex justify-center items-center">
             <img src={linkedin}></img>

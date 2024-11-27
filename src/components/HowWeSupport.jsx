@@ -4,11 +4,11 @@ import SupportCard from './SupportCard'
 
 const HowWeSupport = () => {
     return (
-        <div className='w-[70vw] mx-auto mt-[100px] text-center h-fit'>
+        <div className='w-full md:w-[70vw] mx-auto mt-[100px] text-center h-full'>
             <p className='text-5xl'>
                 How we Support Your Claim of "Extraordinary Ability"
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-[50px] h-[480px]">
+            <div className=" flex items-center justify-evenly flex-wrap gap-6 mt-[50px] h-fit">
                 <SupportCard />
                 <SupportCard />
                 <SupportCard />

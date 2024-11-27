@@ -4,7 +4,7 @@ import Button from './Button/Button'
 
 const PriceCard = () => {
     return (
-        <div className='h-full w-[350px] bg-app-aqua-1 rounded-3xl text-center  px-8 py-12 cursor-pointer'>
+        <div className='h-[480px] w-[350px] bg-app-aqua-1 rounded-3xl text-center  px-8 py-12 cursor-pointer'>
             <p className='text-4xl font-bold text-app-blue-1'>
                 BASIC
             </p>

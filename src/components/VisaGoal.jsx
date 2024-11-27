@@ -2,6 +2,7 @@ import VisaGoals from "../assets/visagoal.png";
 import Visa2 from "../assets/visagoal3.svg";
 import Visa3 from "../assets/visagoal4.svg";
 import Visa4 from "../assets/visagoal5.svg";
+import Button from "./Button/Button";
 
 const VisaGoal = () => {
   return (
@@ -88,12 +89,7 @@ const VisaGoal = () => {
           </div>
 
           <div className="text-center md:text-left mt-8">
-            <button className="relative inline-flex items-center bg-white from-purple-400 to-purple-600 text-blue-700 font-semibold py-4 px-6 rounded-full shadow-md hover:opacity-90 transition">
-              <span className="pr-10">Explore In Detail</span>
-              <span className="absolute right-2 w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center">
-                →
-              </span>
-            </button>
+            <Button width="180px" text={"Explore in detail"}/>
           </div>
         </div>
 

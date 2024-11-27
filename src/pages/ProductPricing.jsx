@@ -21,7 +21,7 @@ const ProductPricing = () => {
             <VisaCard />
             <OClassification />
             <VisaGoal />
-            {/* <Feedback/> */}
+            <Feedback/>
             <FAQs />
             <OneToOneHelpForm />
         </RootLayout>

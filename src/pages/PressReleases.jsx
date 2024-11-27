@@ -26,18 +26,18 @@ const PressReleases = () => {
         <RootLayout>
             <Hero label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
 
-            <div className='mt-[100px] w-[65vw] mx-auto'>
-                <div className=' flex items-center h-[65px] justify-between flex-wrap gap-6'>
-                    <div className='bg-app-blue-blend flex  h-full items-center justify-center w-fit rounded-full px-10 text-black gap-1'>
+            <div className='mt-[100px] w-full  md:w-[65vw] mx-auto'>
+                <div className=' flex items-center h-fit justify-between flex-wrap gap-6'>
+                    <div className='bg-app-blue-blend flex  h-[65px] items-center justify-center md:w-fit rounded-full px-10 text-black gap-1 w-screen'>
                         <AiOutlineSearch className='text-2xl' />
                         <input type="text" className='outline-none ring-0 w-screen lg:w-[600px] p-4 text-2xl font-medium  bg-transparent h-full' value={search} />
                     </div>
-                    <div className='bg-app-blue-blend flex items-center justify-center w-fit rounded-full px-10 text-black  h-full gap-2'>
+                    <div className='bg-app-blue-blend h-[65px] flex items-center justify-center w-fit rounded-full px-10 text-black  gap-2'>
                         <Dropdown isOpen={isChannelOpen} setIsOpen={setIsChannelOpen} options={["ABP News", "Zee News", "BBC", "India tv"]} label={"Channel"} />
                         <div className="w-[30px] rotate-90 bg-gray-400  h-[2px]"></div>
                         <Dropdown isOpen={isYearOpen} setIsOpen={setIsYearOpen} options={years} label={"Year"} />
                     </div>
-                    <div className='w-fit flex justify-center items-center bg-app-blue-blend rounded-full px-10 h-full'>
+                    <div className='w-fit h-[65px] flex justify-center items-center bg-app-blue-blend rounded-full px-10'>
                         <Dropdown isOpen={isSortOpen} setIsOpen={setIsSortOpen} options={["Ascending a-Z", "Decending Z-a", "Latest first"]} label={"Sort"} />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ const PressReleases = () => {
                 </div>
 
                 <div className='mt-[50px]'>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="flex items-center justify-evenly gap-4 flex-wrap">
                         <Article
                             img={article1}
                             label={"LABEL • ZEE NEWS"}

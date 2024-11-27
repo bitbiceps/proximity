@@ -4,7 +4,7 @@ import femaleHand from "../assets/female-hand.png"
 const ExtraordinaryAbility = () => {
   return (
     <div className='bg-app-purple-1 h-[400px] w-full flex justify-center items-centere text-white mt-[100px]'>
-      <div className='w-full flex justify-center items-center px-[300px]'>
+      <div className='w-full flex justify-center items-center px-0 lg:px-[300px] flex-col lg:flex-row'>
         <div className="w-[50vw] h-fit flex flex-col items-center justify-center">
           <p className='text-4xl mb-8'>
             Qualifying for a Green Card Based <br />

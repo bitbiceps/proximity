@@ -11,20 +11,27 @@ import FAQs from '../components/FAQs'
 import OneToOneHelpForm from '../components/OneToOneHelpForm'
 import Journals from '../components/Journals'
 import Prices from '../components/Prices'
+import Feedback from '../components/Feedback'
+import Qualifying from '../components/Qualifying'
+import flag from "../assets/flag.png"
 
 const InnerCountry = () => {
   const { countryName } = useParams()
   return (
     <RootLayout>
       <Hero
-        label4={{ normal: "Embark on", italic: " Immigration" }}
+        label4={{ normal: "Embark on", italic: "Immigration" }}
         label2={`Journey in ${countryName.toUpperCase()}`}
         label5={`Navigate EB-1A, O-1, and Global Talent Visas for Aspiring Immigrants Seeking PR Services in the ${countryName.toUpperCase()}`}
       />
-      <div className='w-[70vw] mx-auto'>
+      <div className='w-full md:w-[70vw] mx-auto'>
         <VisaJourney />
       </div>
-      <div className='w-[75vw] mx-auto'>
+      <div className='w-full md:w-[70vw] mx-auto h-[900px] rounded-3xl overflow-hidden bg-app-blue-blend2 relative mt-[120px]'>
+        <img src={flag} alt="Flag" className='object-contain w-[60%] opacity-25 relative -top-4 left-1' />
+        <Qualifying />
+      </div>
+      <div className='w-full md:w-[75vw] mx-auto'>
         <VisaApplications />
         <div className='mt-[100px]'>
           <GlobalNews innerPage />
@@ -32,7 +39,8 @@ const InnerCountry = () => {
       </div>
       <ExtraordinaryAbility />
       <HowWeSupport />
-      <Prices/>
+      <Feedback />
+      <Prices />
       <div className='mt-[100px]'>
         <Journals inner />
       </div>
