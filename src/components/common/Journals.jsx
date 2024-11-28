@@ -18,7 +18,7 @@ const Journals = ({ inner }) => {
         <>
             <div className={`w-full h-[500px]  ${inner ? 'bg-app-purple-1' : 'bg-app-aqua-1'} font-medium flex items-center py-12 ${inner && 'text-white'}`}>
                 <div className='px-4 md:px-0 flex flex-col justify-center gap-20 h-fit md:ml-28'>
-                    <div className='w-full lg:w-[70%] xl:w-[40%]'>
+                    <div className='w-full lg:w-[70%] xl:w-[60%]'>
                         <p className='text-[32px] lg:text-[52px] font-semibold'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
                     </div>
                     <div className='text-2xl w-fit flex items-center justify-center gap-4'>

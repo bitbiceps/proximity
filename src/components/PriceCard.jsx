@@ -4,7 +4,7 @@ import Button from './common/Button/Button'
 
 const PriceCard = () => {
     return (
-        <div className='h-[480px] w-[350px] bg-app-aqua-1 rounded-3xl text-center  px-8 py-12 cursor-pointer'>
+        <div className='h-[500px] w-[350px] bg-app-aqua-1 rounded-3xl text-center  px-8 py-12 cursor-pointer'>
             <p className='text-4xl font-bold text-app-blue-1'>
                 BASIC
             </p>
@@ -23,7 +23,7 @@ const PriceCard = () => {
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>
                 </ul>
             </div>
-            <div className='mt-6'>
+            <div className='mt-3 '>
                 <Button text={"Explore in Detail"} width='190px' />
             </div>
         </div>

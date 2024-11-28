@@ -27,7 +27,7 @@ const InnerCountry = () => {
       <div className='w-full md:w-[70vw] mx-auto'>
         <VisaJourney />
       </div>
-      <div className='w-full md:w-[70vw] mx-auto h-[900px] rounded-3xl overflow-hidden bg-app-blue-blend2 relative mt-[120px]'>
+      <div className='w-full md:w-[80vw] mx-auto h-[810px] rounded-3xl overflow-hidden bg-app-blue-blend2 relative mt-[120px]'>
         <img src={flag} alt="Flag" className='object-contain w-[60%] opacity-25 relative -top-4 left-1' />
         <Qualifying />
       </div>
