@@ -24,7 +24,7 @@ const InnerCountry = () => {
         label2={`Journey in ${countryName.toUpperCase()}`}
         label5={`Navigate EB-1A, O-1, and Global Talent Visas for Aspiring Immigrants Seeking PR Services in the ${countryName.toUpperCase()}`}
       />
-      <div className='w-full md:w-[70vw] mx-auto'>
+      <div className='w-auto  mx-[160px]'>
         <VisaJourney />
       </div>
       <div className='w-full md:w-[80vw] mx-auto h-[810px] rounded-3xl overflow-hidden bg-app-blue-blend2 relative mt-[120px]'>

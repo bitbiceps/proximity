@@ -7,7 +7,7 @@ const Prices = () => {
             <p className='text-5xl'>
                 Browse Plans
             </p>
-            <div className="flex items-center gap-6 justify-evenly flex-wrap mt-[50px] h-fit">
+            <div className="flex items-center gap-6 justify-evenly  mt-[50px] h-fit">
                 <PriceCard />
                 <PriceCard />
                 <PriceCard />

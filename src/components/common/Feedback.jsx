@@ -7,7 +7,7 @@ const Feedback = () => {
       <p className='text-5xl text-center'>
         What Our Customers Are Saying
       </p>
-      <div className=' flex justify-evenly items-center flex-wrap gap-6 mt-[50px]'>
+      <div className=' flex justify-evenly items-center gap-6 mt-[50px]'>
         <FeedBackCard />
         <FeedBackCard />
         <FeedBackCard />

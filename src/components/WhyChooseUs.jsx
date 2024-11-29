@@ -49,12 +49,12 @@ const WhyChooseUs = () => {
 
         {WhyChooseUsData1.map((item, index) => {
           return (
-            <div key={index} className="w-[290px] h-auto flex flex-col items-center">
+            <div key={index} className="w-[310px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
-              <div className="font-medium text-[28px]  text-center mt-[12px]">
+              <div className="font-medium  text-[24px]  text-center mt-[12px]">
                 {item.head}
               </div>
-              <div className="font-normal text-[20px] text-[#444444] leading-[24px] text-center mt-[12px]">
+              <div className="font-normal font-sans  text-[16px] text-[#444444] leading-[24px] text-center mt-[12px]">
                 {item.content}
               </div>
             </div>
@@ -65,12 +65,12 @@ const WhyChooseUs = () => {
 
         {WhyChooseUsData2.map((item, index) => {
           return (
-            <div key={index} className="w-[290px] h-auto flex flex-col items-center">
+            <div key={index} className="w-[310px] h-auto flex flex-col items-center">
               <img className="w-[40px] h-[40px]" src={item.image} alt="icon" />
-              <div className="font-medium text-[28px] text-[#161616] mt-[12px] text-center">
+              <div className="font-medium text-[24px] text-[#161616] mt-[12px] text-center">
                 {item.head}
               </div>
-              <div className="font-normal text-[20px] text-[#444444] leading-[24px] mt-[12px] text-center">
+              <div className="font-normal font-sans text-[16px] text-[#444444] leading-[24px] mt-[12px] text-center">
                 {item.content}
               </div>
             </div>
