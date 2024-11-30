@@ -127,7 +127,7 @@ const EligibilityCriteria = () => {
 
       <p className="ml-[70px] mt-8 text-2xl  ">
         For more details check out{" "}
-        <a href="#" className="text-cyan-500 underline">
+        <a href="#" className="text-[#56FEFE] underline">
           USCIS website
         </a>
       </p>

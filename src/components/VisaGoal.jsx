@@ -1,4 +1,5 @@
 import VisaGoals from "../assets/visagoal.png";
+import Visa1 from "../assets/visagoal2.svg";
 import Visa2 from "../assets/visagoal3.svg";
 import Visa3 from "../assets/visagoal4.svg";
 import Visa4 from "../assets/visagoal5.svg";
@@ -67,12 +68,17 @@ const VisaGoal = () => {
               {
                 icon: (
                   <img
-                    src={Visa3}
+                    src={Visa1}
                     alt="Icon"
                     className="w-14 h-14 p-2 rounded-full mx-auto"
                   />
                 ),
-                title: "Ongoing Guidance",
+                title: (
+                  <div className="flex flex-col px-10">
+                    <span>Ongoing</span>
+                    <span>Guidance</span>
+                  </div>
+                ),
               },
             ].map((feature, index) => (
               <div
@@ -93,7 +99,7 @@ const VisaGoal = () => {
                 </div>
                 <div
                   className="text-lg font-semibold mt-4 md:mt-0 md:ml-4" // Added margin left for spacing on larger screens
-                  style={{ color: "#8A62F6" }}
+                  style={{ color: "#2324FA" }}
                 >
                   {feature.title}
                 </div>
@@ -110,7 +116,7 @@ const VisaGoal = () => {
           <img
             src={VisaGoals}
             alt="Person with flags"
-            className="h-full w-full object-cover mx-auto md:mx-0 -mb-[69px]"
+            className="h-full w-full object-cover mx-auto md:mx-0 -mb-[81px]"
           />
         </div>
       </div>

@@ -9,7 +9,8 @@ const OClassification = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl">
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center font-sans justify-center border-2 border-cyan-500 rounded-full mb-4">
+          <div className="w-32 h-32 flex items-center font-sans justify-center border-2 rounded-full mb-4 transition-colors duration-300 hover:bg-[#56FEFE] border-[#56FEFE]">
+            {" "}
             <p className="text-2xl font-bold text-gray-800">0-1A</p>
           </div>
           <p className="text-gray-700">
@@ -20,7 +21,7 @@ const OClassification = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex items-center font-sans justify-center border-2 border-cyan-500 rounded-full mb-4">
+          <div className="hover:bg-[#56FEFE] border-[#56FEFE] w-32 h-32 flex items-center font-sans justify-center border-2  rounded-full mb-4">
             <p className="text-2xl font-bold text-gray-800">0-1B</p>
           </div>
           <p className="text-gray-700">
@@ -30,7 +31,7 @@ const OClassification = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex font-sans items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
+          <div className=" w-32 h-32 flex font-sans items-center justify-center border-2 hover:bg-[#56FEFE] border-[#56FEFE] rounded-full mb-4">
             <p className="text-2xl font-bold text-gray-800">0-2</p>
           </div>
           <p className="text-gray-700">
@@ -40,7 +41,7 @@ const OClassification = () => {
         </div>
 
         <div className="flex flex-col items-center text-center">
-          <div className="hover:bg-cyan-500 w-32 h-32 flex font-sans items-center justify-center border-2 border-cyan-500 rounded-full mb-4">
+          <div className=" w-32 h-32 flex font-sans items-center justify-center border-2 hover:bg-[#56FEFE] border-[#56FEFE] rounded-full mb-4">
             <p className="text-2xl font-bold text-gray-800">0-3</p>
           </div>
           <p className="text-gray-700">
@@ -57,7 +58,7 @@ const OClassification = () => {
             href="https://www.uscis.gov"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-cyan-500 underline hover:text-cyan-600"
+            className="text-[#56FEFE] underline"
           >
             USCIS website
           </a>

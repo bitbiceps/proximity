@@ -30,49 +30,55 @@ const faqData = [
 ];
 
 const FAQs = ({ inner }) => {
-  const [openIndex, setOpenIndex] = useState(0); // Default to the first FAQ being open
+  const [openIndex, setOpenIndex] = useState(null); // Default: No FAQ is open
 
   const handleToggle = (index) => {
-    // If the clicked FAQ is already open, close it. Otherwise, open it.
-    setOpenIndex(index === openIndex ? null : index);
+    setOpenIndex(index === openIndex ? null : index); // Toggle open/close state
   };
 
   return (
     <div>
-      <div className={`flex justify-between ${!inner && 'md:m-[102px]'} flex-col md:flex-row items-center`}>
-        <div className="w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center ">
+      <div
+        className={`flex flex-col md:flex-row ${
+          !inner && "md:m-[102px]"
+        } items-start`}
+      >
+        {/* Fixed Header */}
+        <div className="mt-48 w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center">
           Frequently Asked Questions
         </div>
-        <div className="w-full md:w-[70%] flex flex-col  items-center">
+
+        {/* FAQ Accordion */}
+        <div className="w-full md:w-[70%] flex flex-col items-center">
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="w-[95%] border-[1px] border-[#DFDFDF] rounded-[12px] px-[22px] py-[16px] mb-[22px]"
-              onClick={() => handleToggle(index)}
+              className="w-[95%] border-[1px] border-[#DFDFDF] rounded-[12px] px-[22px] py-[16px] mb-[22px] transition-all duration-300"
             >
-              {/* Head */}
-              <div className="flex justify-between items-center">
-                <div
-                  className="text-app-gray-2 font-semibold text-[18px] font-sans cursor-pointer"
-                  onClick={() => handleToggle(index)}
-                >
+              {/* Question */}
+              <div
+                className="flex justify-between items-center cursor-pointer"
+                onClick={() => handleToggle(index)}
+              >
+                <div className="text-app-gray-2 font-semibold text-[18px] font-sans">
                   {item.head}
                 </div>
                 <div>
                   <img
                     src={openIndex === index ? upArrow : downArrow}
                     alt="Toggle arrow"
-                    className="cursor-pointer"
-
                   />
                 </div>
               </div>
-              {/* Content */}
-              {openIndex === index && (
-                <div className="text-[#6C6C6C] text-[18px] font-sans font-normal mt-[18px]">
-                  {item.content}
-                </div>
-              )}
+
+              {/* Answer */}
+              <div
+                className={`text-[#6C6C6C] text-[18px] font-sans font-normal mt-[18px] transition-max-height duration-300 overflow-hidden ${
+                  openIndex === index ? "max-h-[500px]" : "max-h-0"
+                }`}
+              >
+                {item.content}
+              </div>
             </div>
           ))}
         </div>
@@ -82,3 +88,7 @@ const FAQs = ({ inner }) => {
 };
 
 export default FAQs;
+
+
+
+
