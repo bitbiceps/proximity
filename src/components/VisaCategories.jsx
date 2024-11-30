@@ -3,7 +3,7 @@ import design from "../assets/design.svg";
 import QueenTower from "../assets/tower.png";
 import HighTower from "../assets/hightower.png";
 import Europe from "../assets/europe.svg";
-import "./Visa.css";
+
 import Canada from "../assets/canada.svg";
 import { Link } from "react-router-dom";
 import { appRoutes } from "../utils";

@@ -7,6 +7,21 @@ import indiaToday from "../../assets/india_today.png";
 import cnbc from "../../assets/cnbc.png";
 import { Autoplay } from "swiper/modules";
 
+import l1 from "../../assets/logo/logo1.svg";
+import l2 from "../../assets/logo/logo2.svg";
+import l3 from "../../assets/logo/logo3.svg";
+import l4 from "../../assets/logo/logo4.svg";
+import l5 from "../../assets/logo/logo5.svg";
+import l6 from "../../assets/logo/logo6.svg";
+import l7 from "../../assets/logo/logo7.svg";
+import l8 from "../../assets/logo/logo8.svg";
+import l9 from "../../assets/logo/logo9.svg";
+import l10 from "../../assets/logo/logo10.svg";
+import l11 from "../../assets/logo/logo11.svg";
+import l12 from "../../assets/logo/logo12.svg";
+import l13 from "../../assets/logo/logo13.svg";
+import l14 from "../../assets/logo/logo14.svg";
+import l15 from "../../assets/logo/logo15.svg";
 import prev from "../../assets/prev.png";
 import next from "../../assets/next.png";
 
@@ -20,11 +35,21 @@ const GlobalNews = ({ innerPage }) => {
     const nextRef = useRef(null);
 
     const slides = [
-        { id: 1, src: digitalJournal, alt: "Digital Journal" },
-        { id: 2, src: indiaToday, alt: "India Today" },
-        { id: 3, src: cnbc, alt: "CNBC" },
-        { id: 4, src: bz, alt: "BZ" },
-        { id: 5, src: indiaToday, alt: "India Today" },
+        { id: 1, src: l1, alt: "Digital Journal" },
+        { id: 2, src: l2, alt: "India Today" },
+        { id: 3, src: l3, alt: "CNBC" },
+        { id: 4, src: l4, alt: "BZ" },
+        { id: 5, src: l5, alt: "India Today" },
+        { id: 6, src: l6, alt: "India Today" },
+        { id: 7, src: l7, alt: "India Today" },
+        { id: 8, src: l8, alt: "India Today" },
+        { id: 9, src: l9, alt: "India Today" },
+        { id: 10, src: l10, alt: "India Today" },
+        { id: 11, src: l11, alt: "India Today" },
+        { id: 12, src: l12, alt: "India Today" },
+        { id: 13, src: l13, alt: "India Today" },
+        { id: 14, src: l14, alt: "India Today" },
+        { id: 15, src: l15, alt: "India Today" },
     ];
 
     return (
@@ -85,7 +110,7 @@ const GlobalNews = ({ innerPage }) => {
                                 <img
                                     src={slide.src}
                                     alt={slide.alt}
-                                    className="max-h-56 object-contain"
+                                    className="w-[158px] h-[72px] object-contain"
                                 />
                             </SwiperSlide>
                         ))}

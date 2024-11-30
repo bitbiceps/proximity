@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <RootLayout>
       <div className=''>
-        <HomeHero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
+        <HomeHero  label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
         {/* Global News Section */}
         <GlobalNews />
         {/* Journey Section */}

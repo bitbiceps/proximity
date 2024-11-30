@@ -2,14 +2,25 @@ import React from 'react'
 
 const SupportCard = () => {
     return (
-        <div className='h-[480px] w-[400px] bg-app-blue-1 rounded-2xl text-left p-8 cursor-pointer'>
-            <p className='text-white text-2xl mb-4'>
-                Publication in Professional or Major Media Outlets
-            </p>
-            <p className='text-[#FFFFFFB2] text-xl'>
-                We ensure your work is <br /> featured in recognized <br /> professional or trade <br /> publications, as well as other <br /> major media outlets pertinent <br /> to your field.
-            </p>
-        </div>
+        <div className="relative h-[480px] w-[400px] bg-app-blue-1 rounded-2xl text-left p-8 cursor-pointer group">
+  {/* Background with Black Overlay */}
+  <div className="absolute inset-0 z-0 bg-cardbg bg-cover bg-center rounded-2xl opacity-0 group-hover:opacity-[0.88] transition-opacity duration-300">
+    <div className="absolute inset-0 bg-black bg-opacity-50 rounded-2xl"></div>
+  </div>
+
+  {/* Content */}
+  <div className="relative z-10">
+    <p className="text-[#FFFFFF] font-semibold text-[20px] mb-4 group-hover:cursor-pointer">
+      Publication in Professional or Major Media Outlets
+    </p>
+    <p className="text-[#FFFFFFB2] text-[18px] font-sans font-normal group-hover:cursor-pointer">
+      We ensure your work is  featured in recognized  professional or trade 
+      publications, as well as other  major media outlets pertinent  to your field.
+    </p>
+  </div>
+</div>
+
+
     )
 }
 

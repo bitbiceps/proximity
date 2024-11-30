@@ -35,6 +35,7 @@ export default {
       },
       backgroundImage: {
         'map-bg': `url(/src/assets/map.png)`, // Define your custom class
+        'cardbg': `url(/src/assets/card-image.svg)`,
         // 'vdo-bg': `url(/src/assets/home.mp4)`
       },
       animation: {

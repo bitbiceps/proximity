@@ -16,7 +16,7 @@ const PressReleases = () => {
     const [isYearOpen, setIsYearOpen] = useState(false);
     const [isSortOpen, setIsSortOpen] = useState(false);
     const [search, setSearch] = useState("Search for video/audio")
-    const [chips, setChips] = useState(["Newest to Oldest", "ABP News"])
+    const [chips, setChips] = useState(["Newest to Oldest", "XYZ"])
 
     const currentYear = new Date().getFullYear();
 
@@ -26,8 +26,8 @@ const PressReleases = () => {
         <RootLayout>
             <Hero label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
 
-            <div className='mt-[100px] w-full  md:w-[65vw] mx-auto'>
-                <div className=' flex items-center h-fit justify-between flex-wrap gap-6'>
+            <div className='mt-[100px] w-full  md:w-[80vw] mx-auto'>
+                <div className=' flex items-center h-fit justify-between gap-6'>
                     <div className='bg-app-blue-blend flex  h-[65px] items-center justify-center md:w-fit rounded-full px-10 text-black gap-1 w-screen'>
                         <AiOutlineSearch className='text-2xl' />
                         <input type="text" className='outline-none ring-0 w-screen lg:w-[600px] p-4 text-2xl font-medium  bg-transparent h-full' value={search} />
@@ -54,7 +54,7 @@ const PressReleases = () => {
                 </div>
 
                 <div className='mt-[50px]'>
-                    <div className="flex items-center justify-evenly gap-4 flex-wrap">
+                    <div className="grid grid-cols-3 items-center justify-evenly gap-[32px]  ">
                         <Article
                             img={article1}
                             label={"LABEL • ZEE NEWS"}

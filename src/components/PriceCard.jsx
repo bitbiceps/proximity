@@ -4,11 +4,11 @@ import Button from './common/Button/Button'
 
 const PriceCard = () => {
     return (
-        <div className='h-[500px] w-[350px] bg-app-aqua-1 rounded-3xl text-center  px-8 py-12 cursor-pointer'>
+        <div className='h-[500px] w-[350px] bg-[#56FEFE] rounded-3xl text-center  px-8 py-12 cursor-pointer'>
             <p className='text-4xl font-bold text-app-blue-1'>
                 BASIC
             </p>
-            <p className='mt-4'>
+            <p className='mt-4 font-sans'>
                 Lorem ipsum dolor sit amet, consectetur
             </p>
             <p className='text-4xl font-bold mb-4 text-app-blue-1 mt-6'>
@@ -17,7 +17,7 @@ const PriceCard = () => {
             <img src={borderDashed} alt="Border Dashed" className='mt-6' />
 
             <div className='mt-6 w-full text-left'>
-                <ul class="list-disc pl-5 font-semibold">
+                <ul class="fonts-sans list-disc pl-5 font-semibold">
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>

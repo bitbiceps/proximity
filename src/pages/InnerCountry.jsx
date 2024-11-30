@@ -20,6 +20,7 @@ const InnerCountry = () => {
   return (
     <RootLayout>
       <Hero
+        
         label4={{ normal: "Embark on", italic: "Immigration" }}
         label2={`Journey in ${countryName.toUpperCase()}`}
         label5={`Navigate EB-1A, O-1, and Global Talent Visas for Aspiring Immigrants Seeking PR Services in the ${countryName.toUpperCase()}`}
