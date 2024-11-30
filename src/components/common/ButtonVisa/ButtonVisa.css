@@ -1,18 +1,16 @@
-.btn {
+.btn1 {
   transition: all 0.3s ease;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
-
   background-color: white;
   border: none;
   border-radius: 9999px;
-  overflow: hidden;
 }
 
-.btn-text {
+.btn-text1 {
   width: 100%;
   font-size: 16px;
   opacity: 1;
@@ -25,40 +23,39 @@
   align-items: center;
   justify-content: flex-start;
   padding-left: 10px;
-  transition: opacity 0.3s ease, width 0.3s ease, font-size 0.3s ease,
-    visibility 0s 0.3s;
+  transition: opacity 0.3s ease, width 0.3s ease, font-size 0.3s ease, visibility 0s 0.3s;
 }
 
-.btn-icon {
-  width: 50px;
+.btn-icon1 {
+  width: 56px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: aqua;
   color: black;
-  padding: 18px;
+  padding: 20px;
   border-radius: 9999px;
   transition: width 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: aqua; 
+.btn1:hover {
+  background-color: aqua;
 }
 
-.btn:hover .btn-icon {
+.btn1:hover .btn-icon1 {
   width: 100%;
-  background-color: aqua; 
+  background-color: aqua;
 }
 
-.btn:hover .btn-text {
+.btn1:hover .btn-text1 {
   opacity: 0;
   width: 0;
   font-size: 0;
   visibility: hidden;
 }
 
-.btn-icon-text {
+.btn-icon-text1 {
   margin-right: 5px;
   opacity: 0;
   font-size: 0;
@@ -66,10 +63,10 @@
   transition: opacity 0.3s ease, font-size 0.3s ease, visibility 0s 0.3s;
 }
 
-.btn:hover .btn-icon-text {
+.btn1:hover .btn-icon-text1 {
   opacity: 1;
   height: auto;
-  margin-left: -15px;
+  margin-left: -10px;
   font-size: 16px;
   visibility: visible;
 }

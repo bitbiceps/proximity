@@ -3,10 +3,11 @@ import design from "../assets/design.svg";
 import QueenTower from "../assets/tower.png";
 import HighTower from "../assets/hightower.png";
 import Europe from "../assets/europe.svg";
-
+import "./Visa.css";
 import Canada from "../assets/canada.svg";
 import { Link } from "react-router-dom";
 import { appRoutes } from "../utils";
+import ButtonVisa from "./common/ButtonVisa/ButtonVisa";
 const VisaCategories = () => {
   return (
     <div className="bg-indigo-50 pt-24 pb-52 overflow-x-hidden">
@@ -33,10 +34,6 @@ const VisaCategories = () => {
 
       <Link to={appRoutes.inner_country.dynamic("usa")}>
         <div className="mt-32 relative container mx-auto max-w-5xl">
-          {/* <div
-          className="absolute inset-0 w-full h-full  pointer-events-none"
-          style={{ backgroundImage: `url(${design})` }}
-        ></div> */}
           <img
             className="-ml-[300px] -mt-[70px] absolute inset-0 w-full h-[500px]  pointer-events-none"
             src={design}
@@ -53,12 +50,20 @@ const VisaCategories = () => {
                 Visa Solutions for <br />
                 the United States
               </h3>
-              <button className="flex items-center bg-cyan-100 hover:bg-cyan-200 text-cyan-600 font-medium rounded-full px-6 py-2 transition">
-                Get Started
-                <span className="ml-2 bg-cyan-500 text-white p-2 rounded-full">
-                  →
-                </span>
-              </button>
+              <div
+                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                style={{
+                  boxShadow:
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.boxShadow =
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                }
+              >
+                <ButtonVisa width="180px" text={"Get Started"} />
+              </div>
             </div>
 
             <div className="absolute top-[-5.2rem] left-[45%] transform -translate-x-1/2">
@@ -78,15 +83,17 @@ const VisaCategories = () => {
                 Explore Visa Categories:
               </h4>
               <div className="grid grid-cols-3 gap-4">
-                {["EB1A", "EB-2", "EB-3", "O-1", "F-1", "etc"].map((category) => (
-                  <button
-                    key={category}
-                    className="w-[90px] text-xl bg-cyan-200 hover:bg-cyan-300 font-sans font-semibold py-2 rounded-lg transition"
-                    style={{ backgroundColor: "#56FEFE" }}
-                  >
-                    {category}
-                  </button>
-                ))}
+                {["EB1A", "EB-2", "EB-3", "O-1", "F-1", "etc"].map(
+                  (category) => (
+                    <button
+                      key={category}
+                      className="w-[90px] text-xl bg-cyan-200 hover:bg-cyan-300 font-sans font-semibold py-2 rounded-lg transition"
+                      style={{ backgroundColor: "#56FEFE" }}
+                    >
+                      {category}
+                    </button>
+                  )
+                )}
               </div>
             </div>
           </div>
@@ -95,10 +102,6 @@ const VisaCategories = () => {
 
       <Link to={appRoutes.inner_country.dynamic("europe")}>
         <div className="mt-96 relative container mx-auto max-w-5xl">
-          {/* <div
-          className="absolute inset-0 w-full h-full  pointer-events-none"
-          style={{ backgroundImage: `url(${design})` }}
-        ></div> */}
           <img
             className="ml-[400px] -mt-[200px] absolute inset-0 w-full h-[600px]  pointer-events-none"
             src={Europe}
@@ -112,12 +115,20 @@ const VisaCategories = () => {
                 Your Gateway <br />
                 to Europe
               </h3>
-              <button className="flex items-center bg-cyan-100 hover:bg-cyan-200 text-cyan-600 font-medium rounded-full px-6 py-2 transition">
-                Get Started
-                <span className="ml-2 bg-cyan-500 text-white p-2 rounded-full">
-                  →
-                </span>
-              </button>
+              <div
+                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                style={{
+                  boxShadow:
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.boxShadow =
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                }
+              >
+                <ButtonVisa width="180px" text={"Get Started"} />
+              </div>
             </div>
 
             <div className="absolute  top-[-5.9rem] left-[42%] transform -translate-x-1/2">
@@ -149,10 +160,6 @@ const VisaCategories = () => {
       </Link>
       <Link to={appRoutes.inner_country.dynamic("canada")}>
         <div className="mt-96 relative container mx-auto max-w-5xl ">
-          {/* <div
-          className="absolute inset-0 w-full h-full  pointer-events-none"
-          style={{ backgroundImage: `url(${design})` }}
-        ></div> */}
           <img
             className="-ml-[470px] -mt-[190px] absolute inset-0 w-full h-[600px]  pointer-events-none"
             src={Canada}
@@ -168,12 +175,20 @@ const VisaCategories = () => {
                 <br />
                 Canada
               </h3>
-              <button className="flex items-center bg-cyan-100 hover:bg-cyan-200 text-cyan-600 font-medium rounded-full px-6 py-2 transition">
-                Get Started
-                <span className="ml-2 bg-cyan-500 text-white p-2 rounded-full">
-                  →
-                </span>
-              </button>
+              <div
+                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                style={{
+                  boxShadow:
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.boxShadow =
+                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                }
+              >
+                <ButtonVisa width="180px" text={"Get Started"} />
+              </div>
             </div>
 
             <div className="absolute top-[-5.2rem] left-[45%] transform -translate-x-1/2">
