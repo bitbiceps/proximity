@@ -69,16 +69,16 @@ const SuccessStory = () => {
                 >
                     {slides.map((data, idx) => (
                         <SwiperSlide key={`successstories${idx}`}>
-                            <div className='flex items-center justify-center w-fit h-fit  md:h-fit gap-8 flex-col md:flex-row'>
+                            <div className=' flex items-center justify-center w-fit h-fit  md:h-fit gap-8 flex-col md:flex-row'>
                                 <div className='h-fit w-full md:w-fit  relative rounded-2xl overflow-hidden'>
-                                    <img src={data} alt="Success" className=' object-cover' />
+                                    <img src={data} alt="Success" className=' h-[387px] w-[310px] object-cover' />
                                 </div>
-                                <div className='w-full md:w-[300px]'>
-                                    <p className='border-b border-app-gray-3 pb-1 text-2xl font-semibold clear-start mb-10'>
+                                <div className=' w-full md:w-[280px]'>
+                                    <p className='border-b border-app-gray-3 pb-1 text-[24px] font-medium clear-start mb-[36px] w-[70%]'>
                                         Lorem Ipsum
                                     </p>
-                                    <p className='text-[#232323] text-lg font-thin'>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa, at. Natus, nemo blanditiis maxime quidem nisi optio assumenda autem nulla dolorem ipsum molestias eius impedit nesciunt! Blanditiis distinctio provident debitis at dolore atque repudiandae, sapiente vitae dignissimos quasi!
+                                    <p className='text-[#232323] text-[18px] font-light font-sans'>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel lacus finibus, sagittis ipsum vel, varius ligula. Nunc magna sapien, bibendum at neque sit amet, blandit aliquam augue. Lorem ipsum dolor sit amet, consectet.
                                     </p>
                                 </div>-
                             </div>

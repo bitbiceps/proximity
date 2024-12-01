@@ -20,11 +20,13 @@ const VisaCard = () => {
       </div>
 
       <div className="flex-1 md:w-1/2 mt-6 md:mt-0">
-        <img
-          src={VisaType}
-          alt="Visa Type"
-          className="w-full h-96 my-auto rounded-md object-cover"
-        />
+        <div className="relative overflow-hidden rounded-md">
+          <img
+            src={VisaType}
+            alt="Visa Type"
+            className="w-full h-96 my-auto rounded-md object-cover transition-transform duration-500 ease-in-out hover:scale-110"
+          />
+        </div>
       </div>
     </div>
   );

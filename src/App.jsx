@@ -10,7 +10,7 @@ import ProductPricing from './pages/ProductPricing'
 
 const App = () => {
   return (
-    <div className='font-serif text-app-gray-3'>
+    <div className='font-serif text-app-gray-3 scroll-smooth'>
       <Routes>
         <Route exact path={appRoutes.root} Component={Home} />
         <Route path={appRoutes.faq} Component={FAQPage} />

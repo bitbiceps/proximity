@@ -4,10 +4,10 @@ import PageHeader from './common/PageHeader'
 
 const BrandsAuthority = () => {
   return (
-    <div className="mt-[100px] w-full h-fit">
+    <div className="mt-[63px] w-full h-fit">
       {/* Heading */}
       <PageHeader label={"Establishing Your Brand's Authority"} />
-      <div className='flex flex-col md:flex-row justify-center md:gap-32 items-center  h-fit w-full mt-[80px]'>
+      <div className='flex flex-col md:flex-row justify-center md:gap-32 items-center  h-fit w-full mt-[20px]'>
         <div className='flex flex-col items-stretch justify-center h-fit w-fit gap-32'>
           <PhoneCard
             label={"Enhanced Digital Presence"}

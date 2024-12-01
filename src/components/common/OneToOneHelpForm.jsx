@@ -2,7 +2,8 @@ import React from 'react';
 
 const OneToOneHelpForm = () => {
   return (
-    <div className='w-[90vw] mx-auto shadow-2xl rounded-2xl py-14 px-20 text-xl'>
+    <div className='w-[90vw] mx-auto mt-[140px] rounded-2xl py-14 px-20 text-xl'
+    style={{'box-shadow': '0px 0px 20px 0px #0000001A' }}>
       <p className='text-4xl text-center mb-12'>
         Consult For One - To - One Help
       </p>
