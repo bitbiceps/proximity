@@ -13,8 +13,8 @@ import PRStrategy from '../components/PRStrategy'
 
 const Home = () => {
   return (
-    <RootLayout>
-      <HomeHero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
+    <RootLayout isHome>
+      <HomeHero isH label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
       <GlobalNews />
       <Journals />
       <WhyChooseUs />

@@ -16,7 +16,7 @@ const SuccessStory = () => {
     const nextRef = useRef(null);
 
     const slides = [
-        man, girl
+        man, girl, girl
     ]
     return (
         <div className="mt-[136px] w-full overflow-hidden">

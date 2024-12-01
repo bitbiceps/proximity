@@ -7,10 +7,10 @@ import { CiMenuFries } from "react-icons/ci";
 
 
 
-const Header = () => {
+const Header = ({ isHome }) => {
   return (
     <div className='absolute z-50 top-12 w-full h-fit px-14'>
-      <div className='p-4 text-white  bg-app-gray-1 h-fit mx-auto border-[0.77px] w-full border-app-gray-2 rounded-md'>
+      <div className={`p-4 text-white  bg-app-gray-1 h-fit mx-auto border-[0.77px] w-full border-app-gray-2 rounded-md`}>
         <div className='flex justify-between items-center  px-4 py-2'>
           {/* logo */}
           <Link to={appRoutes.root}>
