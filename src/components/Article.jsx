@@ -3,7 +3,7 @@ import React from 'react'
 const Article = ({ img, label, text }) => {
     return (
         <div className='flex flex-col items-center justify-center w-[381px] mb-[60px]'>
-            <div className='w-full h-[314px] overflow-hidden border  rounded-2xl px-5 border-gray-300'>
+            <div className='w-full h-[314px] overflow-hidden border  rounded-2xl px-5 border-gray-300 cursor-pointer'>
                 <img src={img} className='object-contain w-full h-full' alt="" />
             </div>
             <div className='w-full mt-6'>

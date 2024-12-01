@@ -34,20 +34,24 @@ export default {
         albara: ["Albara Substitute", "Arial", "Helvetica", "sans-serif"],
       },
       backgroundImage: {
-        'map-bg': `url(/src/assets/map.png)`, // Define your custom class
+        'map-bg': `url(/src/assets/map.png)`,
         'cardbg': `url(/src/assets/card-image.svg)`,
-        // 'vdo-bg': `url(/src/assets/home.mp4)`
       },
       animation: {
-        'loop-scroll': 'loop-scroll 5s linear infinite'
+        'loop-scroll': 'loop-scroll 5s linear infinite',
+        'fade-in-up': 'fade-in-up 1.5s ease-in-out forwards', // Custom animation
       },
       keyframes: {
         'loop-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(calc(-50% - 20px))' }
-        }
+        },
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
       }
     },
   },
   plugins: [],
-}
+};
