@@ -14,19 +14,15 @@ import PRStrategy from '../components/PRStrategy'
 const Home = () => {
   return (
     <RootLayout>
-      <div className=''>
-        <HomeHero  label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
-        {/* Global News Section */}
-        <GlobalNews />
-        {/* Journey Section */}
-        <Journals />
-        <WhyChooseUs />
-        <TailorPR />
-        <BrandsAuthority />
-        <SuccessStory />
-        <PRStrategy />
-        <FAQs />
-      </div>
+      <HomeHero label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
+      <GlobalNews />
+      <Journals />
+      <WhyChooseUs />
+      <TailorPR />
+      <BrandsAuthority />
+      <SuccessStory />
+      <PRStrategy />
+      <FAQs />
     </RootLayout>
   )
 }
