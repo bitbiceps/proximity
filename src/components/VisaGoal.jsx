@@ -3,7 +3,7 @@ import Visa1 from "../assets/visagoal2.svg";
 import Visa2 from "../assets/visagoal3.svg";
 import Visa3 from "../assets/visagoal4.svg";
 import Visa4 from "../assets/visagoal5.svg";
-import ButtonVisa from "./common/ButtonVisa/ButtonVisa";
+import Button from "./common/ButtonVisa/ButtonVisa";
 
 const VisaGoal = () => {
   return (
@@ -35,7 +35,7 @@ const VisaGoal = () => {
                 ),
                 title: (
                   <>
-                    Personalized
+                    Personalized 
                     PR Strategies
                   </>
                 ),
@@ -83,7 +83,7 @@ const VisaGoal = () => {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="flex flex-col md:flex-row items-center justify-center bg-white text-purple-500 p-4 rounded-lg shadow-md text-center cursor-pointer hover:scale-110 transition-all duration-500"
+                className="flex flex-col md:flex-row items-center justify-center bg-white text-purple-500 p-4 rounded-lg shadow-md text-center"
                 style={{ height: "120px", width: "auto" }} // Width auto to make it fit content
               >
                 <div
@@ -108,7 +108,7 @@ const VisaGoal = () => {
           </div>
 
           <div className=" text-center md:text-left mt-8 w-48">
-            <ButtonVisa width="200px" text={"Explore in detail"} />
+            <Button width="200px" text={"Explore in detail"} />
           </div>
         </div>
 

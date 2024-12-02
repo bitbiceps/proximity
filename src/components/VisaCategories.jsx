@@ -52,14 +52,14 @@ const VisaCategories = () => {
               <div
                 className="btn  flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
                 style={{
-                  marginTop:"-50px",
+                  marginTop: "-50px",
                   boxShadow:
                     "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.boxShadow =
-                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                (e.currentTarget.style.boxShadow =
+                  "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
                 }
               >
                 <ButtonVisa width="180px" text={"Get Started"} />
@@ -117,14 +117,15 @@ const VisaCategories = () => {
               </h3>
               <div
                 className="btn flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
-                style={{ marginTop:"-50px",
+                style={{
+                  marginTop: "-50px",
                   boxShadow:
                     "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.boxShadow =
-                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                (e.currentTarget.style.boxShadow =
+                  "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
                 }
               >
                 <ButtonVisa width="180px" text={"Get Started"} />
@@ -140,7 +141,7 @@ const VisaCategories = () => {
             </div>
 
             <div className="ml-24 p-32 flex-1 -mt-16">
-              <h4 className="text-lg font-semibold text-indigo-900 mb-4"  style={{ color: "#3D3D3D" }}>
+              <h4 className="text-lg font-semibold text-indigo-900 mb-4" style={{ color: "#3D3D3D" }}>
                 Explore Visa Categories:
               </h4>
               <div className="grid grid-cols-1 gap-4">
@@ -166,7 +167,7 @@ const VisaCategories = () => {
           />
           <div
             className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px] hover:scale-110 transition-all duration-500"
-            style={{ borderRadius: "30px",height:"330px" }}
+            style={{ borderRadius: "30px", height: "330px" }}
           >
             <div className="p-10 flex-1">
               <h3 className="text-[32px] font-extrabold text-blue-700 mb-14 ">
@@ -178,14 +179,14 @@ const VisaCategories = () => {
               <div
                 className="btn flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
                 style={{
-                  marginTop:"-10px",
+                  marginTop: "-10px",
                   boxShadow:
                     "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.boxShadow = "none")}
                 onMouseLeave={(e) =>
-                  (e.currentTarget.style.boxShadow =
-                    "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
+                (e.currentTarget.style.boxShadow =
+                  "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
                 }
               >
                 <ButtonVisa width="200px" text={"Get Started"} />
@@ -202,7 +203,7 @@ const VisaCategories = () => {
             </div>
 
             <div className="ml-24 p-32 flex-1">
-              <h4 className="text-lg font-semibold text-indigo-900 mb-4"  style={{ color: "#3D3D3D" }}>
+              <h4 className="text-lg font-semibold text-indigo-900 mb-4" style={{ color: "#3D3D3D" }}>
                 Explore Visa Categories:
               </h4>
               <div className="grid grid-cols-1 gap-4" >
