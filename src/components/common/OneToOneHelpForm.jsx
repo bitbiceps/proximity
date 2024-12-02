@@ -3,7 +3,7 @@ import React from 'react';
 const OneToOneHelpForm = () => {
   return (
     <div className='w-[90vw] mx-auto mt-[140px] rounded-2xl py-14 px-20 text-xl'
-    style={{'box-shadow': '0px 0px 20px 0px #0000001A' }}>
+      style={{ 'box-shadow': '0px 0px 20px 0px #0000001A' }}>
       <p className='text-4xl text-center mb-12'>
         Consult For One - To - One Help
       </p>
@@ -104,7 +104,7 @@ const OneToOneHelpForm = () => {
         <div>
           <button
             type="submit"
-            className="w-full mt-8 bg-app-aqua-3  px-4 py-6 rounded-full shadow  border-none outline-none text-3xl font-semibold"
+            className="w-full mt-8 bg-app-aqua-3  px-4 py-6 rounded-full shadow  border-none outline-none text-3xl font-semibold hover:opacity-75 transition-all duration-500"
           >
             Submit
           </button>

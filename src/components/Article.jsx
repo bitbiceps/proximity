@@ -4,7 +4,7 @@ const Article = ({ img, label, text }) => {
     return (
         <div className='flex flex-col items-center justify-center w-[381px] mb-[60px]'>
             <div className='w-full h-[314px] overflow-hidden border  rounded-2xl px-5 border-gray-300 cursor-pointer'>
-                <img src={img} className='object-contain w-full h-full' alt="" />
+                <img src={img} className='object-contain w-full h-full  hover:scale-110 transition-all duration-500' alt="" />
             </div>
             <div className='w-full mt-6'>
                 <div className='flex flex-col items-start justify-center'>
@@ -13,7 +13,7 @@ const Article = ({ img, label, text }) => {
                 </div>
             </div>
             <div className='w-full mt-[22px]'>
-                <button className='w-full h-[60px] rounded-full text-xl bg-app-aqua-3 cursor-pointer'>Read Article</button>
+                <button className='w-full h-[60px] rounded-full text-xl bg-app-aqua-3 hover:opacity-75 cursor-pointer transition-all duration-500'>Read Article</button>
             </div>
         </div>
     )

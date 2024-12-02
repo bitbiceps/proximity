@@ -2,7 +2,7 @@ import React from "react";
 import "./ButtonVisa.css";
 import { FaArrowRight } from "react-icons/fa6";
 
-const ButtonVisa = ({ text, width = "150px" }) => {
+const ButtonVisa = ({ text, width = "160px" }) => {
   return (
     <button
       style={{ width }}

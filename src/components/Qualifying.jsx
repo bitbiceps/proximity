@@ -6,7 +6,7 @@ const Qualifying = () => {
   return (
     <div className='absolute top-0 left-0 w-full h-full py-4 px-8 flex justify-center items-center'>
       <div className='w-1/2 h-[90%] flex items-center justify-center'>
-        <img src={man2} alt="Business Man" className='object-contain h-[697px]' />
+        <img src={man2} alt="Business Man" className='object-contain h-[697px] hover:scale-110 transition-all duration-500 cursor-pointer' />
       </div>
       <div className='w-1/2 h-fit text-white'>
         <p className='text-[40px]'>

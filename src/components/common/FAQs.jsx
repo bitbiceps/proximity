@@ -39,12 +39,11 @@ const FAQs = ({ inner }) => {
   return (
     <div>
       <div
-        className={`flex flex-col md:flex-row ${
-          !inner && "md:m-[102px]"
-        } items-start`}
+        className={`flex flex-col md:flex-row ${!inner && "md:m-[102px]"
+          } items-start`}
       >
         {/* Fixed Header */}
-        <div className="mt-48 w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center">
+        <div className="mt-48 w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-left">
           Frequently Asked Questions
         </div>
 
@@ -53,11 +52,11 @@ const FAQs = ({ inner }) => {
           {faqData.map((item, index) => (
             <div
               key={index}
-              className="w-[95%] border-[1px] border-[#DFDFDF] rounded-[12px] px-[22px] py-[16px] mb-[22px] transition-all duration-300"
+              className="w-[95%] border-[1px] border-[#DFDFDF] rounded-[12px] px-[22px] py-[10px] mb-[22px] transition-all duration-300"
             >
               {/* Question */}
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex justify-between items-center cursor-pointer mt-3"
                 onClick={() => handleToggle(index)}
               >
                 <div className="text-app-gray-2 font-semibold text-[18px] font-sans">
@@ -73,9 +72,8 @@ const FAQs = ({ inner }) => {
 
               {/* Answer */}
               <div
-                className={`text-[#6C6C6C] text-[18px] font-sans font-normal mt-[18px] transition-max-height duration-300 overflow-hidden ${
-                  openIndex === index ? "max-h-[500px]" : "max-h-0"
-                }`}
+                className={`text-[#6C6C6C] text-[18px] font-sans font-normal mt-[18px] transition-max-height duration-300 overflow-hidden ${openIndex === index ? "max-h-[500px]" : "max-h-0"
+                  }`}
               >
                 {item.content}
               </div>

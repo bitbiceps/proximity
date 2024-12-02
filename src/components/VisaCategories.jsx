@@ -32,13 +32,13 @@ const VisaCategories = () => {
       </div>
 
       <Link to={appRoutes.inner_country.dynamic("usa")}>
-        <div className="mt-32 relative container mx-auto max-w-5xl" >
+        <div className="mt-32 relative container mx-auto max-w-5xl">
           <img
             className="-ml-[300px] -mt-[70px] absolute inset-0 w-full h-[500px]  pointer-events-none"
             src={design}
           />
           <div
-            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px]"
+            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px]  hover:scale-110 transition-all duration-500"
             style={{ borderRadius: "30px" }}
           >
             <div className="p-10 flex-1">
@@ -50,7 +50,7 @@ const VisaCategories = () => {
                 the United States
               </h3>
               <div
-                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                className="btn  flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
                 style={{
                   marginTop:"-50px",
                   boxShadow:
@@ -107,7 +107,7 @@ const VisaCategories = () => {
             src={Europe}
           />
           <div
-            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px]"
+            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px]  hover:scale-110 transition-all duration-500"
             style={{ borderRadius: "30px" }}
           >
             <div className="p-10 flex-1 ">
@@ -116,7 +116,7 @@ const VisaCategories = () => {
                 to Europe
               </h3>
               <div
-                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                className="btn flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
                 style={{ marginTop:"-50px",
                   boxShadow:
                     "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)",
@@ -159,13 +159,13 @@ const VisaCategories = () => {
         </div>
       </Link>
       <Link to={appRoutes.inner_country.dynamic("canada")}>
-        <div className="mt-96 relative container mx-auto max-w-5xl " >
+        <div className="mt-96 relative container mx-auto max-w-5xl">
           <img
             className="-ml-[470px] -mt-[190px] absolute inset-0 w-full h-[600px]  pointer-events-none"
             src={Canada}
           />
           <div
-            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px]"
+            className="relative bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center h-[300px] hover:scale-110 transition-all duration-500"
             style={{ borderRadius: "30px",height:"330px" }}
           >
             <div className="p-10 flex-1">
@@ -176,7 +176,7 @@ const VisaCategories = () => {
                 Canada
               </h3>
               <div
-                className="btn border-2 border-gray-400 bg-blue-500 flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
+                className="btn flex items-center justify-center w-[190px] h-[60px] rounded-full transition-all duration-300 hover:border-0 hover:bg-transparent hover:shadow-none"
                 style={{
                   marginTop:"-10px",
                   boxShadow:
@@ -188,7 +188,7 @@ const VisaCategories = () => {
                     "0px -4px 6px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.1)")
                 }
               >
-                <ButtonVisa width="180px" text={"Get Started"} />
+                <ButtonVisa width="200px" text={"Get Started"} />
               </div>
             </div>
 
