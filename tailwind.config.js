@@ -39,7 +39,8 @@ export default {
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite',
-        'fade-in-up': 'fade-in-up 1.5s ease-in-out forwards', // Custom animation
+        'fade-in-up': 'fade-in-up 500ms ease-in-out forwards', // Custom animation,
+        'fade-in-visibility': 'fade-in-visibility 3s ease-in-out forwards', // Custom animation
       },
       keyframes: {
         'loop-scroll': {
@@ -50,6 +51,16 @@ export default {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        'fade-in-visibility': {
+          '0%': {
+            opacity: '0',
+            visibility: 'hidden',
+          },
+          '100%': {
+            opacity: '1',
+            visibility: 'visible',
+          },
+        }
       }
     },
   },
