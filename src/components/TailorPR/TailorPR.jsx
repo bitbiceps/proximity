@@ -15,15 +15,18 @@ import "swiper/css/pagination";
 
 import "./TailorPR.css"
 import PageHeader from "../common/PageHeader";
-import image1 from "../../assets/tailorpr1.jpeg";
-import image2 from "../../assets/tailorpr2.png";
-import image3 from "../../assets/tailorpr3.png";
+import image1 from "../../assets/tailord_pr/1.png";
+import image2 from "../../assets/tailord_pr/2.png";
+import image3 from "../../assets/tailord_pr/3.png";
+import image4 from "../../assets/tailord_pr/4.png";
+import image5 from "../../assets/tailord_pr/5.png";
 
 const TailorPRData = [
-  { image: image1, title: "PR for Immigration" },
-  { image: image2, title: "Tech PR Agency for Startups" },
-  { image: image3, title: "Tech PR Agency for Startups" },
-  { image: image2, title: "Tech PR Agency for Startups" },
+  { image: image1, title: "Arts & Entertainment PR" },
+  { image: image2, title: "B2B PR" },
+  { image: image3, title: "PR For Businesses" },
+  { image: image4, title: "Health and Medtech PR" },
+  { image: image5, title: "Publishing Services" },
 ];
 
 const TailorPR = () => {
@@ -47,7 +50,7 @@ const TailorPR = () => {
       {/* Image Section */}
       <div className="mt-[60px] md:ml-[160px] p-4">
         <Swiper
-          modules={[Pagination, Autoplay, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={400}
           loop={true}
           autoplay={{
