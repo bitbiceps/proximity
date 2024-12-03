@@ -1,5 +1,5 @@
-import React from 'react'
-import FeedBackCard from './FeedBackCard'
+import React from "react";
+import FeedBackCard from "./FeedBackCard";
 
 const Feedback = () => {
   return (
@@ -7,13 +7,13 @@ const Feedback = () => {
       <p className='text-5xl text-center'>
         What Our Customers Are Saying
       </p>
-      <div className=' flex justify-evenly items-center gap-6 mt-[50px]'>
+      <div className=' flex flex-col  mt-[50px] lg:flex-row'>
         <FeedBackCard />
         <FeedBackCard />
         <FeedBackCard />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feedback
+export default Feedback;

@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
-import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import React from 'react';
+import { FaAngleDown } from "react-icons/fa6";
 
 
 const Dropdown = ({ options, isOpen, setIsOpen, label, setState, state }) => {
 
     return (
         <div className="relative text-2xl w-fit">
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className='flex justify-center items-center cursor-pointer'
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className='flex justify-center items-center cursor-pointer'>
                 <span>
                     {label}
                 </span>
@@ -26,8 +23,8 @@ const Dropdown = ({ options, isOpen, setIsOpen, label, setState, state }) => {
                                 key={option}
                                 className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-gray-100 w-full"
                                 onClick={() => {
-                                    setIsOpen(false);
                                     setState([...state, option])
+                                    setIsOpen(false);
                                 }}
                             >
                                 {option}
