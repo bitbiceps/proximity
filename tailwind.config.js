@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'carousel': 'carousel 5s infinite linear',
+      },
+      keyframes: {
+        carousel: {
+          '0%, 100%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(-25vw)' },
+        },
+      },
       colors: {
         app: {
           gray: {
