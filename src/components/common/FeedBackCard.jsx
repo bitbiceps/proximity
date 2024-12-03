@@ -2,17 +2,17 @@ import React from "react";
 import vector from "../../assets/vector.png";
 
 const FeedBackCard = () => {
-  const fullStars = Math.floor(4); // Number of full stars
-  const emptyStars = 5 - fullStars; // Number of empty stars
-  return (
-    <div className="w-[400px] rounded-xl overflow-hidden shadow-2xl  cursor-pointer duration-500">
-      <div className="flex items-center gap-4 px-8 mt-6">
-        <div className="w-fit h-fit">
-          {[...Array(fullStars)].map((_, index) => (
-            <span key={`full-${index}`} className="text-app-blue-1 text-2xl">
-              ★
-            </span>
-          ))}
+    const fullStars = Math.floor(4); // Number of full stars
+    const emptyStars = 5 - fullStars; // Number of empty stars
+    return (
+        <div className='w-[400px] mx-auto lg:w-[28%] rounded-xl overflow-hidden shadow-2xl  cursor-pointer'>
+            <div className='flex items-center gap-4 px-8 mt-6'>
+                <div className='w-fit h-fit'>
+                    {[...Array(fullStars)].map((_, index) => (
+                        <span key={`full-${index}`} className="text-app-blue-1 text-2xl">
+                            ★
+                        </span>
+                    ))}
 
           {/* Render empty stars */}
           {[...Array(emptyStars)].map((_, index) => (

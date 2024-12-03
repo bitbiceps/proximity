@@ -44,7 +44,9 @@ export default {
       },
       backgroundImage: {
         'map-bg': `url(/src/assets/map.png)`,
-        'cardbg': `url(/src/assets/card-image.svg)`,
+        support1: `url(/src/assets/card-image.svg)`,
+        support2: `url(/src/assets/support2.png)`,
+        support3: `url(/src/assets/support3.png)`
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite',
