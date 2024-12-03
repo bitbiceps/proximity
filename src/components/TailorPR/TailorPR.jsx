@@ -20,6 +20,8 @@ import image2 from "../../assets/tailord_pr/2.png";
 import image3 from "../../assets/tailord_pr/3.png";
 import image4 from "../../assets/tailord_pr/4.png";
 import image5 from "../../assets/tailord_pr/5.png";
+import image6 from "../../assets/tailord_pr/6.png";
+import image7 from "../../assets/tailord_pr/7.png";
 
 const TailorPRData = [
   { image: image1, title: "Arts & Entertainment PR" },
@@ -27,6 +29,8 @@ const TailorPRData = [
   { image: image3, title: "PR For Businesses" },
   { image: image4, title: "Health and Medtech PR" },
   { image: image5, title: "Publishing Services" },
+  { image: image6, title: "Tech PR Agency for Startups" },
+  { image: image7, title: "PR for immigration" },
 ];
 
 const TailorPR = () => {
@@ -85,7 +89,7 @@ const TailorPR = () => {
         >
           {TailorPRData.map((data, idx) => (
             <SwiperSlide key={`tailordata${idx}`}>
-              <div className="card h-[600px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
+              <div className="card h-[550px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
                 <div className="card__content h-full w-full  text-center relative p-20 transition-transform duration-1000 text-white font-bold rounded-2xl">
                   <div className="card__front rounded-2xl absolute top-0 bottom-0 right-0 left-0">
                     <img src={data.image} alt="Tailord Pr" className="h-full w-full object-cover" />

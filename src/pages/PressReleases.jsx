@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import RootLayout from '../layout/RootLayout'
-import Hero from '../components/common/Hero'
+// import Hero from '../components/common/Hero'
+import HomeHero from "../components/HomeHero"
 import { AiOutlineSearch } from "react-icons/ai";
 import Dropdown from '../components/common/DropDown';
 import { RxCross2 } from "react-icons/rx";
@@ -8,6 +9,7 @@ import Article from '../components/Article';
 import article1 from "../assets/articles/article1.png"
 import article2 from "../assets/articles/article2.png"
 import article3 from "../assets/articles/article3.png"
+import map2 from "../assets/testing/map2.mp4"
 
 
 
@@ -30,7 +32,7 @@ const PressReleases = () => {
 
     return (
         <RootLayout>
-            <Hero label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
+            <HomeHero vdo={map2} label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
 
             <div className='mt-[100px] w-full  md:w-[80vw] mx-auto'>
                 <div className=' flex items-center h-fit justify-between gap-6'>

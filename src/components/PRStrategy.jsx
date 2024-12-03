@@ -6,7 +6,7 @@ const PRStrategy = () => {
     return (
         <div className='flex flex-col md:flex-row bg-app-purple-1 items-center justify-center overflow-hidden'>
             <div className='w-full p-4 justify-center items-center md:w-1/3 flex flex-col text-white gap-10 md:justify-start md:items-start md:translate-x-[140px]'>
-                <p className='text-[56px] w-[90%] text-white font-bold'>
+                <p className='text-[56px] w-[90%] text-white font-extrabold'>
                     Ready to Elevate <br />
                     Your PR Strategy?
                 </p>
