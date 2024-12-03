@@ -27,24 +27,21 @@
 }
 
 .btn-icon1 {
-  width: 56px;
+  width: 44px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   background-color: aqua;
   color: black;
-  padding: 20px;
+  padding: 14px;
   border-radius: 9999px;
+  margin-right: 10px;
   transition: width 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
 }
 
-.btn1:hover {
-  background-color: aqua;
-}
-
 .btn1:hover .btn-icon1 {
-  width: 100%;
+  width: 94.5%;
   background-color: aqua;
 }
 

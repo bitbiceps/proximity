@@ -5,6 +5,7 @@ import article1 from "../../assets/articles/article1.png";
 import article2 from "../../assets/articles/article2.png";
 import article3 from "../../assets/articles/article3.png";
 import article4 from "../../assets/articles/article4.png";
+import dots from "../../assets/dot.png"
 
 const Journals = ({ inner }) => {
     const slides = [
@@ -16,9 +17,9 @@ const Journals = ({ inner }) => {
 
     return (
         <>
-            <div className={`w-full h-[500px]  ${inner ? 'bg-app-purple-1' : 'bg-app-aqua-1'} font-medium flex items-center py-12 ${inner && 'text-white'}`}>
+            <div className={`w-full h-[500px] relative ${inner ? 'bg-app-purple-1' : 'bg-app-aqua-1'} font-medium flex items-center py-12 ${inner && 'text-white'}`}>
                 <div className='px-4 md:px-0 flex flex-col justify-center gap-20 h-fit md:ml-28'>
-                    <div className='w-full lg:w-[70%] xl:w-[60%]'>
+                    <div className='w-full lg:w-[70%] xl:w-[45%]'>
                         <p className='text-[32px] lg:text-[52px] font-semibold'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
                     </div>
                     <div className='text-2xl w-fit flex items-center justify-center gap-4'>
@@ -26,6 +27,7 @@ const Journals = ({ inner }) => {
                         <img src={inner ? arrowDownWhite : arrowDown} alt="Arrow Down" />
                     </div>
                 </div>
+                <img src={dots} alt="Dots" className='w-full lg:w-[32%] absolute right-10 top-0' />
             </div>
 
             <div className="w-full h-[500px] overflow-hidden">

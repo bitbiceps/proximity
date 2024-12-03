@@ -5,7 +5,7 @@ const FeedBackCard = () => {
     const fullStars = Math.floor(4); // Number of full stars
     const emptyStars = 5 - fullStars; // Number of empty stars
     return (
-        <div className='w-[400px] rounded-xl overflow-hidden shadow-2xl hover:scale-110 cursor-pointer duration-500'>
+        <div className='w-[400px] mx-auto lg:w-[28%] rounded-xl overflow-hidden shadow-2xl  cursor-pointer'>
             <div className='flex items-center gap-4 px-8 mt-6'>
                 <div className='w-fit h-fit'>
                     {[...Array(fullStars)].map((_, index) => (
