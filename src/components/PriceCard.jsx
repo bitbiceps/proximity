@@ -17,7 +17,7 @@ const PriceCard = () => {
             <img src={borderDashed} alt="Border Dashed" className='mt-6' />
 
             <div className='mt-6 w-full text-left'>
-                <ul class="fonts-sans list-disc pl-5 font-semibold">
+                <ul className="fonts-sans list-disc pl-5 font-semibold">
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>
                     <li>Lorem ipsum dolor sit amet, <br /> consectetur</li>

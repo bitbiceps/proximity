@@ -22,6 +22,12 @@ const PressReleases = () => {
 
     const years = Array.from({ length: 10 }, (_, i) => currentYear - i);
 
+
+    const removeChip = (indexToRemove) => {
+        setChips((prevChips) => prevChips.filter((_, idx) => idx !== indexToRemove));
+    };
+
+
     return (
         <RootLayout>
             <Hero label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
@@ -30,31 +36,29 @@ const PressReleases = () => {
                 <div className=' flex items-center h-fit justify-between gap-6'>
                     <div className='bg-app-blue-blend flex  h-[65px] items-center justify-center md:w-fit rounded-full px-10 text-black gap-1 w-screen'>
                         <AiOutlineSearch className='text-2xl' />
-                        <input type="text" className='outline-none ring-0 w-screen lg:w-[600px] p-4 text-2xl font-medium  bg-transparent h-full' value={search} />
+                        <input onChange={e => setSearch(e.target.value)} type="text" className='outline-none ring-0 w-screen lg:w-[600px] p-4 text-2xl font-medium  bg-transparent h-full' value={search} />
                     </div>
                     <div className='bg-app-blue-blend h-[65px] flex items-center justify-center w-fit rounded-full px-10 text-black  gap-2'>
-                        <Dropdown isOpen={isChannelOpen} setIsOpen={setIsChannelOpen} options={["ABP News", "Zee News", "BBC", "India tv"]} label={"Channel"} />
+                        <Dropdown state={chips} setState={setChips} isOpen={isChannelOpen} setIsOpen={setIsChannelOpen} options={["ABP News", "Zee News", "BBC", "India tv"]} label={"Channel"} />
                         <div className="w-[30px] rotate-90 bg-gray-400  h-[2px]"></div>
-                        <Dropdown isOpen={isYearOpen} setIsOpen={setIsYearOpen} options={years} label={"Year"} />
+                        <Dropdown state={chips} setState={setChips} isOpen={isYearOpen} setIsOpen={setIsYearOpen} options={years} label={"Year"} />
                     </div>
                     <div className='w-fit h-[65px] flex justify-center items-center bg-app-blue-blend rounded-full px-10'>
-                        <Dropdown isOpen={isSortOpen} setIsOpen={setIsSortOpen} options={["Ascending a-Z", "Decending Z-a", "Latest first"]} label={"Sort"} />
+                        <Dropdown state={chips} setState={setChips} isOpen={isSortOpen} setIsOpen={setIsSortOpen} options={["Newest to Oldest", "Oldest to Newest", "Latest first"]} label={"Sort"} />
                     </div>
                 </div>
 
                 <div className='flex justify-start h-[45px] gap-4 mt-[40px]'>
-                    {chips.map(chip => (
-                        <>
-                            <div key={chip} className=' flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'>
-                                <p className='text-sm font-bold'>{chip}</p>
-                                <RxCross2 className='text-xl cursor-pointer' />
-                            </div>
-                        </>
+                    {chips.map((chip, idx) => (
+                        <div key={chip + idx} className=' flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'>
+                            <p className='text-sm font-bold'>{chip}</p>
+                            <RxCross2 className='text-xl cursor-pointer' onClick={() => removeChip(idx)} />
+                        </div>
                     ))}
                 </div>
 
                 <div className='mt-[50px]'>
-                    <div className="grid grid-cols-3 items-center justify-evenly gap-[32px]  ">
+                    <div className="grid grid-cols-3 items-center justify-evenly gap-[32px]">
                         <Article
                             img={article1}
                             label={"LABEL • ZEE NEWS"}

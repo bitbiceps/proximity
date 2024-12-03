@@ -85,12 +85,12 @@ const TailorPR = () => {
         >
           {TailorPRData.map((data, idx) => (
             <SwiperSlide key={`tailordata${idx}`}>
-              <div class="card h-[600px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
-                <div class="card__content h-full w-full  text-center relative p-20 transition-transform duration-1000 text-white font-bold rounded-2xl">
-                  <div class="card__front rounded-2xl absolute top-0 bottom-0 right-0 left-0">
+              <div className="card h-[600px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
+                <div className="card__content h-full w-full  text-center relative p-20 transition-transform duration-1000 text-white font-bold rounded-2xl">
+                  <div className="card__front rounded-2xl absolute top-0 bottom-0 right-0 left-0">
                     <img src={data.image} alt="Tailord Pr" className="h-full w-full object-cover" />
                   </div>
-                  <div class="card__back  rounded-2xl absolute top-0 bottom-0 right-0 left-0 h-full w-full flex flex-col gap-12 justify-center items-start bg-app-blue-1 p-16 text-left">
+                  <div className="card__back  rounded-2xl absolute top-0 bottom-0 right-0 left-0 h-full w-full flex flex-col gap-12 justify-center items-start bg-app-blue-1 p-16 text-left">
                     <p className="text-4xl">
                       {data.title}
                     </p>

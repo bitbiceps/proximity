@@ -21,11 +21,9 @@ const Header = ({ isHome }) => {
           </Link>
           <div className='w-fit hidden gap-10 justify-center items-center text-[14px]  font-serif font-semibold md:flex'>
             {headerLinks.map((item, idx) => (
-              <>
-                <Link key={item.label} to={item.to} className='cursor-pointer'>
-                  {item.label}
-                </Link>
-              </>
+              <Link key={item.label + idx} to={item.to} className='cursor-pointer'>
+                {item.label}
+              </Link>
             ))}
           </div>
           <div className='md:hidden w-fit h-fit justify-center items-center'>

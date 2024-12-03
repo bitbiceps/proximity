@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 
-const Dropdown = ({ options, isOpen, setIsOpen, label, width = "fit" }) => {
+const Dropdown = ({ options, isOpen, setIsOpen, label, setState, state }) => {
 
     return (
         <div className="relative text-2xl w-fit">
@@ -27,7 +27,7 @@ const Dropdown = ({ options, isOpen, setIsOpen, label, width = "fit" }) => {
                                 className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-gray-100 w-full"
                                 onClick={() => {
                                     setIsOpen(false);
-                                    console.log(`Selected: ${option}`);
+                                    setState([...state, option])
                                 }}
                             >
                                 {option}
