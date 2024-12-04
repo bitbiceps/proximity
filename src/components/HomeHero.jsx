@@ -17,14 +17,14 @@ const Hero = ({ label1, label2, label3, label4, label5, label6, vdo = homeVdo })
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className='w-full absolute text-center text-white text-7xl z-20 animate-fade-in-up'>
-          {label1 && <p className='mb-1'>{label1}</p>}
+        <div className='w-full absolute text-center text-white text-7xl z-20 animate-fade-in-up font-bold'>
+          {label1 && <p className='mb-6'>{label1}</p>}
           {label4 && (
             <p className='mb-1'>
               {label4.normal} <span className='italic'>{label4.italic}</span>
             </p>
           )}
-          {label2 && <p className='mb-8'>{label2}</p>}
+          {label2 && <p className='mb-6'>{label2}</p>}
           {label3 && <p className='italic'>{label3}</p>}
           {label5 && <p className='text-3xl w-[68%] mx-auto'>{label5}</p>}
           {label6 && <p className='text-3xl w-full text-center'>{label6}</p>}

@@ -40,7 +40,7 @@ const TailorPR = () => {
   return (
     <div className="mt-[136px] w-full overflow-hidden">
       {/* Heading */}
-      <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center w-[83vw] mx-auto">
+      <div className="flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center w-full lg:w-[83vw] mx-auto">
         <PageHeader label={"Tailored PR Solutions for Every Need"} />
         <div className="flex gap-4">
           <div ref={prevRef} className="flex justify-center items-center w-fit h-fit text-2xl text-gray-400 border-gray-400 hover:text-app-blue-1 border-2 rounded-full hover:border-app-blue-1 p-2 cursor-pointer transition-colors">
@@ -52,7 +52,7 @@ const TailorPR = () => {
         </div>
       </div>
       {/* Image Section */}
-      <div className="mt-[60px] md:ml-[160px] p-4">
+      <div className="mt-[60px] lg:ml-[160px] p-4">
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={400}
@@ -83,13 +83,17 @@ const TailorPR = () => {
               slidesPerView: 2,
             },
             1024: {
+              slidesPerView: 2,
+            },
+
+            1200: {
               slidesPerView: 3,
             },
           }}
         >
           {TailorPRData.map((data, idx) => (
             <SwiperSlide key={`tailordata${idx}`}>
-              <div className="card h-[550px] md:w-[600px] rounded-2xl overflow-hidden cursor-pointer">
+              <div className="card w-full h-[250px] sm:w-[40vw] md:h-[400px]  lg:w-[400px] xl:h-[500px] xl:w-[460px] 2xl:w-[550px] 2xl:   rounded-2xl overflow-hidden cursor-pointer">
                 <div className="card__content h-full w-full  text-center relative p-20 transition-transform duration-1000 text-white font-bold rounded-2xl">
                   <div className="card__front rounded-2xl absolute top-0 bottom-0 right-0 left-0">
                     <img src={data.image} alt="Tailord Pr" className="h-full w-full object-cover" />
