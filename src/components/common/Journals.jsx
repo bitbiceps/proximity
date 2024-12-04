@@ -17,11 +17,14 @@ const Journals = ({ inner }) => {
 
     return (
         <>
-            <div className={`w-full h-[400px] relative ${inner ? 'bg-app-purple-1' : 'bg-app-aqua-1'} font-medium flex items-center py-12 ${inner && 'text-white'}`}>
+            <div className={`w-full h-fit relative ${inner ? 'bg-app-purple-1' : 'bg-app-aqua-1'} font-medium flex items-center py-12 ${inner && 'text-white'}`}>
                 <div className='px-4 md:px-0 flex flex-col justify-center gap-20 h-fit md:ml-28'>
-                    <div className='w-full lg:w-[70%] xl:w-[45%]'>
-                        <p className='text-[32px] lg:text-[52px] font-semibold'>Our Placements dolor sit amet, cons ectetur adipiscing elit. Maecenas sed dolor sapien.</p>
+                    <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] 2xl:w-[45%]">
+                        <p className="text-[32px] lg:text-[52px] font-semibold leading-snug">
+                            Our Placements dolor sit amet, consectetur adipiscing elit. Maecenas sed dolor sapien.
+                        </p>
                     </div>
+
                     <div className='text-2xl w-fit flex items-center justify-center gap-4'>
                         <p>Enjoy Our Journey</p>
                         <img src={inner ? arrowDownWhite : arrowDown} alt="Arrow Down" />
