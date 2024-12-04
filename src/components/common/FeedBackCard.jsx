@@ -5,7 +5,7 @@ const FeedBackCard = () => {
   const fullStars = Math.floor(4); // Number of full stars
   const emptyStars = 5 - fullStars; // Number of empty stars
   return (
-    <div className="mx-auto w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[32vw] xl:w-[22vw]  rounded-xl overflow-hidden shadow-2xl">
+    <div className="mx-auto w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[32vw] xl:w-[26vw]  rounded-xl overflow-hidden shadow-2xl">
       <div className="flex items-center gap-4 px-8 mt-6">
         <div className="w-fit h-fit">
           {/* Render full stars */}
