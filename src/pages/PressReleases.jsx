@@ -9,7 +9,7 @@ import Article from '../components/Article';
 import article1 from "../assets/articles/article1.png"
 import article2 from "../assets/articles/article2.png"
 import article3 from "../assets/articles/article3.png"
-import map2 from "../assets/testing/map2.mp4"
+import map1 from "../assets/testing/map1.mp4"
 
 
 
@@ -32,8 +32,7 @@ const PressReleases = () => {
 
     return (
         <RootLayout>
-            <HomeHero vdo={map2} label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
-
+            <HomeHero vdo={map1} label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
             <div className='mt-[100px] w-full  md:w-[80vw] mx-auto'>
                 <div className=' flex items-center h-fit justify-between gap-6'>
                     <div className='bg-app-blue-blend flex  h-[65px] items-center justify-center md:w-fit rounded-full px-10 text-black gap-1 w-screen'>
@@ -50,14 +49,20 @@ const PressReleases = () => {
                     </div>
                 </div>
 
-                <div className='flex justify-start h-[45px] gap-4 mt-[40px]'>
-                    {chips.map((chip, idx) => (
-                        <div key={chip + idx} className=' flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'>
-                            <p className='text-sm font-bold'>{chip}</p>
-                            <RxCross2 className='text-xl cursor-pointer' onClick={() => removeChip(idx)} />
-                        </div>
-                    ))}
-                </div>
+                {chips.length > 0 && (
+                    <div className='flex justify-start h-[45px] gap-4 mt-[40px]'>
+                        {chips.map((chip, idx) => (
+                            <div
+                                key={`${chip}-${idx}`}
+                                className='flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'
+                            >
+                                <p className='text-sm font-bold'>{chip}</p>
+                                <RxCross2 className='text-xl cursor-pointer' onClick={() => removeChip(idx)} />
+                            </div>
+                        ))}
+                    </div>
+                )}
+
 
                 <div className='mt-[50px]'>
                     <div className="grid grid-cols-3 items-center justify-evenly gap-[32px]">
