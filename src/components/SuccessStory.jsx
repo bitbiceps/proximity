@@ -39,11 +39,11 @@ const SuccessStory = () => {
       </div>
       <div className="mt-[80px] w-[83vw] mx-auto">
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]} // Include Autoplay here
+          modules={[Navigation, Pagination, Autoplay]} 
           loop={true}
           autoplay={{
-            delay: 3000, // Set delay in milliseconds
-            disableOnInteraction: false, // Prevent autoplay pause on user interaction
+            delay: 5000, // Set delay in milliseconds
+            disableOnInteraction: false, 
           }}
           spaceBetween={100}
           navigation={{

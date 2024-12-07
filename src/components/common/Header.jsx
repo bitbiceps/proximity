@@ -28,7 +28,7 @@ const Header = ({ isHome }) => {
   return (
     <div
       className={`fixed z-50 left-0 w-full px-14 transition-all duration-700 ${
-        isScrolled ? 'bg-app-gray-1 text-white shadow-md top-0 bg-gray-100 opacity-[90%] ' : 'top-10 '
+        isScrolled ? 'bg-app-gray-1 text-white shadow-md top-0 bg-gray-100 opacity-[97%] ' : 'top-0 '
       }`}
     >
       <div
