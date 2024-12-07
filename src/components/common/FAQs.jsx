@@ -44,7 +44,7 @@ const FAQs = ({ inner }) => {
         } items-start`}
       >
         {/* Fixed Header */}
-        <div className="mt-48 w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-center">
+        <div className="mt-48 w-full md:w-[30%] text-[52px] text-[#201446] font-semibold leading-[78px] flex justify-center items-center text-start">
           Frequently Asked Questions
         </div>
 
