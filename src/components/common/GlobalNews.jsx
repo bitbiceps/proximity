@@ -51,6 +51,7 @@ const GlobalNews = ({ innerPage }) => {
         { id: 14, src: l14, alt: "India Today" },
         { id: 15, src: l15, alt: "India Today" },
     ];
+    
 
     return (
         <div className={`w-full ${!innerPage && 'py-36'}`}>

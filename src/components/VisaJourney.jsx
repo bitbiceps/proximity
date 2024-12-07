@@ -10,7 +10,7 @@ const VisaJourney = () => {
                 <p className='text-[20px] text-[#201446]'>In the US, applicants must meet USCIS criteria or show one- time achievements like major awards. Proof should include article details and translations if needed.</p>
             </div>
             <div className="w-full lg:w-[50%] overflow-hidden  ">
-                <img src={girl2} alt="Girl" className='rounded-xl object-cover h-full' />
+                <img src={girl2} alt="Girl" className='rounded-xl object-cover h-full hover:scale-110 transition-all duration-500 cursor-pointer' />
             </div>
         </div>
     )

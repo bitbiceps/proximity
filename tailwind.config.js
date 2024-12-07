@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'carousel': 'carousel 5s infinite linear',
+      },
+      keyframes: {
+        carousel: {
+          '0%, 100%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(-25vw)' },
+        },
+      },
       colors: {
         app: {
           gray: {
@@ -34,20 +43,37 @@ export default {
         albara: ["Albara Substitute", "Arial", "Helvetica", "sans-serif"],
       },
       backgroundImage: {
-        'map-bg': `url(/src/assets/map.png)`, // Define your custom class
-        'cardbg': `url(/src/assets/card-image.svg)`,
-        // 'vdo-bg': `url(/src/assets/home.mp4)`
+        'map-bg': `url(/src/assets/map.png)`,
+        support1: `url(/src/assets/card-image.svg)`,
+        support2: `url(/src/assets/support2.png)`,
+        support3: `url(/src/assets/support3.png)`
       },
       animation: {
-        'loop-scroll': 'loop-scroll 5s linear infinite'
+        'loop-scroll': 'loop-scroll 5s linear infinite',
+        'fade-in-up': 'fade-in-up 500ms ease-in-out forwards', // Custom animation,
+        'fade-in-visibility': 'fade-in-visibility 3s ease-in-out forwards', // Custom animation
       },
       keyframes: {
         'loop-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(calc(-50% - 20px))' }
+        },
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'fade-in-visibility': {
+          '0%': {
+            opacity: '0',
+            visibility: 'hidden',
+          },
+          '100%': {
+            opacity: '1',
+            visibility: 'visible',
+          },
         }
       }
     },
   },
   plugins: [],
-}
+};

@@ -7,10 +7,10 @@ import { CiMenuFries } from "react-icons/ci";
 
 
 
-const Header = () => {
+const Header = ({ isHome }) => {
   return (
     <div className='absolute z-50 top-12 w-full h-fit px-14'>
-      <div className='p-4 text-white  bg-app-gray-1 h-fit mx-auto border-[0.77px] w-full border-app-gray-2 rounded-md'>
+      <div className={`p-4 text-white  bg-app-gray-1 h-fit mx-auto border-[0.77px] w-full ${isHome ? "border-app-gray-1" : "border-app-gray-2"} rounded-md`}>
         <div className='flex justify-between items-center  px-4 py-2'>
           {/* logo */}
           <Link to={appRoutes.root}>
@@ -21,11 +21,9 @@ const Header = () => {
           </Link>
           <div className='w-fit hidden gap-10 justify-center items-center text-[14px]  font-serif font-semibold md:flex'>
             {headerLinks.map((item, idx) => (
-              <>
-                <Link key={item.label} to={item.to} className='cursor-pointer'>
-                  {item.label}
-                </Link>
-              </>
+              <Link key={item.label + idx} to={item.to} className='cursor-pointer'>
+                {item.label}
+              </Link>
             ))}
           </div>
           <div className='md:hidden w-fit h-fit justify-center items-center'>

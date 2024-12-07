@@ -16,7 +16,7 @@ const SuccessStory = () => {
     const nextRef = useRef(null);
 
     const slides = [
-        man, girl
+        man, girl, girl
     ]
     return (
         <div className="mt-[136px] w-full overflow-hidden">
@@ -34,7 +34,7 @@ const SuccessStory = () => {
             </div>
             <div className='mt-[80px] w-[83vw] mx-auto'>
                 <Swiper
-                    modules={[Autoplay, Navigation]}
+                    modules={[Navigation]}
                     loop={true}
                     autoplay={{
                         delay: 1500,

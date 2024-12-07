@@ -3,7 +3,7 @@ import Visa1 from "../assets/visagoal2.svg";
 import Visa2 from "../assets/visagoal3.svg";
 import Visa3 from "../assets/visagoal4.svg";
 import Visa4 from "../assets/visagoal5.svg";
-import Button from "./common/Button/Button";
+import Button from "./common/ButtonVisa/ButtonVisa";
 
 const VisaGoal = () => {
   return (
