@@ -28,7 +28,15 @@ const Hero = ({ label1, label2, label3, label4, label5, label6, vdo = homeVdo })
           {label3 && <p className='italic'>{label3}</p>}
           {label5 && <p className='text-3xl w-[68%] mx-auto'>{label5}</p>}
           {label6 && <p className='text-3xl w-full text-center'>{label6}</p>}
+          
         </div>
+        <div className='absolute top-[70%] flex justify-center items-center lg:gap-[72px] md:gap-[72px] gap-[30px] '>
+            <button className=' border-[#FFFFFF] border-[1px] rounded-[8px] px-[32px] py-[8px] text-[#FFFFFF] lg:text-[24px] text-[18px] font-medium hover:bg-[#ffffff] hover:text-[#2324FA] '>Get Started</button>
+            <button className=' border-[#FFFFFF] border-[1px] rounded-[8px] px-[32px] py-[8px] text-[#FFFFFF] lg:text-[24px] text-[18px] font-medium hover:bg-[#ffffff] hover:text-[#2324FA] '>Our Services</button>
+        </div>
+        
+        
+        
       </div>
     </>
   );

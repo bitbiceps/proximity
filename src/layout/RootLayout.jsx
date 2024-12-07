@@ -5,7 +5,7 @@ import Footer from "../components/common/Footer"
 const RootLayout = ({ children, isHome }) => {
   return (
     <>
-      <Header isHome={!!isHome} />
+      <Header  isHome={!!isHome} />
       {children}
       <Footer />
     </>
