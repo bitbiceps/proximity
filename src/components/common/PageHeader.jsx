@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageHeader = ({ label }) => {
     return (
-        <div className="text-center text-[52px] text-[#201446]  font-medium">
+        <div className="text-center text-[52px] text-[#201446]  font-semibold">
             {label || "Please Add Label"}
         </div>
     )

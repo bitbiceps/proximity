@@ -1,38 +1,73 @@
-import React from 'react'
-import logo from "../../assets/logo.svg"
-import { appRoutes, headerLinks } from '../../utils'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
+import logo from "../../assets/logo.svg";
+import logoBlue from "../../assets/logoBlue.svg";
+import { appRoutes, headerLinks } from '../../utils';
+import { Link } from 'react-router-dom';
 import { CiMenuFries } from "react-icons/ci";
 
-
-
-
 const Header = ({ isHome }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Handle scroll events
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className='absolute z-50 top-12 w-full h-fit px-14'>
-      <div className={`p-4 text-white  bg-app-gray-1 h-fit mx-auto border-[0.77px] w-full ${isHome ? "border-app-gray-1" : "border-app-gray-2"} rounded-md`}>
-        <div className='flex justify-between items-center  px-4 py-2'>
-          {/* logo */}
+    <div
+      className={`fixed z-50 left-0 w-full px-14 transition-all duration-700 ${
+        isScrolled ? 'bg-app-gray-1 text-white shadow-md top-0 bg-gray-100 opacity-[90%] ' : 'top-10 '
+      }`}
+    >
+      <div
+        className={`p-4 text-white  h-fit mx-auto border-[0.77px] ${
+          isHome ? 'border-app-gray-1' : 'border-app-gray-2'
+        } rounded-md transition-all duration-300 ${
+          isScrolled ? 'w-full top-0 border-none rounded-none bg-gray-100 opacity-[100%] ' : ''
+        }`}
+      >
+        <div className='flex justify-between items-center px-4 py-2'>
+          {/* Logo */}
           <Link to={appRoutes.root}>
-            <div className='w-fit font-sans flex items-center justify-center gap-2 text-xl font-semibold  leading-4 cursor-pointer'>
-              <img src={logo} alt="Logo" />
-              <p>PROXIMITY</p>
+            <div className='w-fit font-sans flex items-center justify-center gap-2 text-xl font-semibold leading-4 cursor-pointer'>
+              <img src={isScrolled ? logoBlue : logo} alt="Logo" />
+              <p className={`${isScrolled ? 'text-[#2324FA] ' : ''}`}>PROXIMITY</p>
             </div>
           </Link>
-          <div className='w-fit hidden gap-10 justify-center items-center text-[14px]  font-serif font-semibold md:flex'>
+          <div className='w-fit hidden gap-10 justify-center items-center text-[14px] font-serif font-semibold md:flex'>
             {headerLinks.map((item, idx) => (
-              <Link key={item.label + idx} to={item.to} className='cursor-pointer'>
+              <Link
+                key={item.label + idx}
+                to={item.to}
+                className={`cursor-pointer hover:text-[#2324FA] active:text-[#2324FA]  ${
+                  isScrolled ? 'text-black' : 'text-white'
+                }`}
+              >
                 {item.label}
               </Link>
             ))}
           </div>
           <div className='md:hidden w-fit h-fit justify-center items-center'>
-            <CiMenuFries className='text-3xl' />
+            <CiMenuFries
+              className={`text-3xl ${isScrolled ? 'text-black' : 'text-white'}`}
+            />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
