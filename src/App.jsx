@@ -7,6 +7,7 @@ import FAQPage from './pages/FAQPage'
 import PressReleases from './pages/PressReleases'
 import InnerCountry from './pages/InnerCountry'
 import ProductPricing from './pages/ProductPricing'
+import OurServices from "./components/OurServices"
 
 const App = () => {
   return (

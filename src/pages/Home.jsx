@@ -9,20 +9,26 @@ import FAQs from "../components/common/FAQs"
 import BrandsAuthority from '../components/BrandsAuthority'
 import SuccessStory from '../components/SuccessStory'
 import PRStrategy from '../components/PRStrategy'
+import GSAP1 from '../components/GSAP1'
+import OurServices from '../components/OurServices'
 
 
 const Home = () => {
   return (
     <RootLayout isHome>
       <HomeHero isH label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
-      <GlobalNews />
-      <Journals />
-      <WhyChooseUs />
-      <TailorPR />
-      <BrandsAuthority />
-      <SuccessStory />
-      <PRStrategy />
-      <FAQs />
+      {/* <GlobalNews /> */}
+      <div className='translate-y-[-100px]'>
+        <GSAP1 />
+        <Journals />
+        <WhyChooseUs />
+        <OurServices />
+        <TailorPR />
+        <BrandsAuthority />
+        <SuccessStory />
+        <PRStrategy />
+        <FAQs />
+      </div>
     </RootLayout>
   )
 }

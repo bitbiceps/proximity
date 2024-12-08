@@ -20,7 +20,8 @@ export default {
           gray: {
             1: '#D0D0D04D',
             2: '#444444',
-            3: '#201446'
+            3: '#201446',
+            4: "#161616B2"
           },
           blue: {
             1: '#2324FA',
@@ -46,7 +47,9 @@ export default {
         'map-bg': `url(/src/assets/map.png)`,
         support1: `url(/src/assets/card-image.svg)`,
         support2: `url(/src/assets/support2.png)`,
-        support3: `url(/src/assets/support3.png)`
+        support3: `url(/src/assets/support3.png)`,
+        'map-bg-2': "url(/src/assets/map-custom.png)",
+        'gradient-bg': "url(/src/assets/blue_gradient.png)"
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite',
