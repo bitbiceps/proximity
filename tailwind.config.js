@@ -44,12 +44,11 @@ export default {
         albara: ["Albara Substitute", "Arial", "Helvetica", "sans-serif"],
       },
       backgroundImage: {
-        'map-bg': `url(/src/assets/map.png)`,
+        'map-bg': `url(/src/assets/map-custom.png)`,
         support1: `url(/src/assets/card-image.svg)`,
         support2: `url(/src/assets/support2.png)`,
         support3: `url(/src/assets/support3.png)`,
-        'map-bg-2': "url(/src/assets/map-custom.png)",
-        'gradient-bg': "url(/src/assets/blue_gradient.png)"
+        'gradient-bg': "url(/src/assets/map-color.png)"
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite',
@@ -78,5 +77,17 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.hide-scrollbar': {
+          '-ms-overflow-style': 'none', // IE and Edge
+          'scrollbar-width': 'none', // Firefox
+        },
+        '.hide-scrollbar::-webkit-scrollbar': {
+          display: 'none', // Chrome, Safari, and other WebKit browsers
+        },
+      });
+    },
+  ],
 };
