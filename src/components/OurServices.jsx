@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import camera from "../assets/camera.svg"
-import { AnimatePresence, motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 

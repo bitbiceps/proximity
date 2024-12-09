@@ -16,7 +16,7 @@ const GSAP1 = () => {
             borderRadius: "60px",  // Set the border radius
             scrollTrigger: {
                 trigger: containerRef.current,  // Use the container reference
-                start: "top 90%",  // Start when the top of the container is 10% visible from the top
+                start: "top 80%",  // Start when the top of the container is 10% visible from the top
                 end: "top 10%",    // End when the top of the container reaches 20% of the viewport height
                 scrub: true,       // Smooth scroll-linked animation
                 ease: "power3.inOut", // Ease for quick start, slow middle, and quick end
