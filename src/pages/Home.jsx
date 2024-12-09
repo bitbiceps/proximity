@@ -16,7 +16,7 @@ import OurServices from '../components/OurServices'
 const Home = () => {
   return (
     <RootLayout isHome>
-      <HomeHero isH label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
+      <HomeHero isHome={true} label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
       {/* <GlobalNews /> */}
       <div className='translate-y-[-50px]'>
         <GSAP1 />

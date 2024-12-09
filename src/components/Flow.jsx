@@ -11,7 +11,7 @@ const Flow = () => {
           className=" text-center text-3xl md:text-4xl font-albara[0] font-semibold text-gray-900"
           style={{ fontWeight: 600 }}
         >
-          Your Visa Application
+          Your Journey
         </h1>
       </div>
       <div className="-mt-24">
