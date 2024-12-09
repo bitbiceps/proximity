@@ -18,9 +18,9 @@ const Home = () => {
     <RootLayout isHome>
       <HomeHero isH label1={"Unlocking your"} label2={"PR Potential with"} label3={"Expertise and Innovation"} />
       {/* <GlobalNews /> */}
-      <div className='translate-y-[-100px]'>
+      <div className='translate-y-[-50px]'>
         <GSAP1 />
-        <Journals />
+        {/* <Journals /> */}
         <WhyChooseUs />
         <OurServices />
         <TailorPR />

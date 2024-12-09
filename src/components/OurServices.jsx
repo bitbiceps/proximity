@@ -21,12 +21,12 @@ const OurServices = () => {
   return (
     <div className='h-fit lg:h-screen justify-center items-center flex capitalize mt-[100px] lg:mt-0'>
       <div className='h-fit lg:h-[70vh] w-[100vw] lg:w-[80vw] flex justify-between items-center flex-col lg:flex-row px-12'>
-        <div className='w-full h-fit lg:h-[75%] lg:w-1/5 flex mb-[60px] lg:mb-0'>
+        <div className='w-full h-fit lg:h-[75%] lg:w-[20%] flex mb-[60px] lg:mb-0'>
           <p className='text-[52px] leading-0 lg:w-[3ch] mb-4 lg:mb-0 font-bold'>
             Our Services
           </p>
         </div>
-        <div className='w-full h-fit lg:h-full lg:w-1/3'>
+        <div className='w-full h-fit lg:h-full lg:w-[40%]'>
           <div className="justify-between hidden lg:flex  flex-wrap gap-4 max-w-md mx-auto transition-all duration-1000">
             {/* Item 1 */}
             {services.map((item, idx) => (
@@ -45,7 +45,7 @@ const OurServices = () => {
             ))}
           </div>
         </div>
-        <div className='w-full h-fit lg:w-1/3 lg:h-full flex items-center justify-center  overflow-hidden'>
+        <div className='w-full lg:h-full h-fit lg:w-[32%]  flex  overflow-x-scroll'>
           <Card services={services} active={active} setActive={setActive} />
         </div>
       </div>
@@ -68,10 +68,8 @@ const Card = ({ services, active, setActive }) => {
   }
 
   return (
-    <div
-      className="bg-purple-500 shadow-2xl text-white p-8 h-full flex flex-col justify-between w-full overflow-hidden"
-    >
-      <div>
+    <div className="bg-purple-500 shadow-2xl text-white p-8 h-full flex flex-col justify-between w-[100%] overflow-hidden">
+      <div className='w-full h-fit'>
         {/* Icon */}
         <div className="mb-6 w-full">
           <img src={camera} alt="camera" />
