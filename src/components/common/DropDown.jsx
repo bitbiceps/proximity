@@ -5,7 +5,7 @@ import { FaAngleDown } from "react-icons/fa6";
 const Dropdown = ({ options, isOpen, setIsOpen, label, setState, state }) => {
 
     return (
-        <div className="relative text-2xl w-fit">
+        <div className="relative text-[18px] w-fit">
             <button onClick={() => setIsOpen(!isOpen)} className='flex justify-center items-center cursor-pointer'>
                 <span>
                     {label}
@@ -16,7 +16,7 @@ const Dropdown = ({ options, isOpen, setIsOpen, label, setState, state }) => {
             </button>
 
             {isOpen && (
-                <div className="absolute z-10 mt-1 w-fit bg-white rounded-md shadow-lg border border-gray-300">
+                <div className="absolute z-10 mt-1 w-[200px] bg-white rounded-md shadow-lg border border-gray-300">
                     <ul className="py-1">
                         {options.map((option) => (
                             <li

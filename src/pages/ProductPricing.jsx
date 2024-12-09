@@ -17,7 +17,7 @@ const ProductPricing = () => {
     return (
         <RootLayout>
             <HomeHero vdo={map1} label4={{ normal: "Elevate Your", italic: "Visa Application" }} label2={"Process with Expert PR Services"} label6={"Let Us Help You Navigate the Complexities of Visa Applications"} />
-            <Flow />
+            <Flow /> 
             <VisaCategories />
             <EligibilityCriteria />
             <VisaCard />

@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
-import RootLayout from '../layout/RootLayout'
-// import Hero from '../components/common/Hero'
-import HomeHero from "../components/HomeHero"
+import React, { useState } from 'react';
+import RootLayout from '../layout/RootLayout';
+import HomeHero from "../components/HomeHero";
 import { AiOutlineSearch } from "react-icons/ai";
 import Dropdown from '../components/common/DropDown';
 import { RxCross2 } from "react-icons/rx";
 import Article from '../components/Article';
-import article1 from "../assets/articles/article1.png"
-import article2 from "../assets/articles/article2.png"
-import article3 from "../assets/articles/article3.png"
-import map1 from "../assets/testing/map1.mp4"
-
-
+import article1 from "../assets/articles/article1.png";
+import article2 from "../assets/articles/article2.png";
+import article3 from "../assets/articles/article3.png";
+import map1 from "../assets/testing/map1.mp4";
 
 const PressReleases = () => {
     const [isChannelOpen, setIsChannelOpen] = useState(false);
@@ -50,72 +47,73 @@ const PressReleases = () => {
                 </div>
 
                 {chips.length > 0 && (
-                    <div className='flex justify-start h-[45px] gap-4 mt-[40px]'>
+                    <div className='flex flex-wrap justify-start h-auto gap-4 mt-[40px]'>
                         {chips.map((chip, idx) => (
-                            <div
-                                key={`${chip}-${idx}`}
-                                className='flex w-fit h-full items-center justify-center gap-4 text-white rounded-full bg-app-purple-2 px-4'
-                            >
-                                <p className='text-sm font-bold'>{chip}</p>
-                                <RxCross2 className='text-xl cursor-pointer' onClick={() => removeChip(idx)} />
-                            </div>
+                             <div
+                             key={`${chip}-${idx}`}
+                             className='flex w-auto my-[8px] py-[8px] px-[16px] h-[40px] items-center justify-around gap-4 text-white text-[14px] font-semibold rounded-full bg-app-purple-2'
+                         >
+                             <p className='text-sm font-bold'>{chip}</p>
+                             <RxCross2 className='text-xl cursor-pointer' onClick={() => removeChip(idx)} />
+                         </div> 
                         ))}
                     </div>
                 )}
 
-
                 <div className='mt-[50px]'>
                     <div className="grid grid-cols-3 items-center justify-evenly gap-[32px]">
-                        <Article
+                    <Article
                             img={article1}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
-                        />
-                        <Article
-                            img={article2}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
-                        />
-                        <Article
-                            img={article2}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
                         />
                         <Article
                             img={article1}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                        />
+                        <Article
+                            img={article1}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                        />
+                        <Article
+                            img={article1}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                        />
+                        <Article
+                            img={article1}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                        />
+                        <Article
+                            img={article1}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                        />
+                        <Article
+                            img={article1}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
                         />
                         <Article
                             img={article2}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
                         />
                         <Article
                             img={article3}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
-                        />
-                        <Article
-                            img={article1}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
-                        />
-                        <Article
-                            img={article2}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
-                        />
-                        <Article
-                            img={article3}
-                            label={"LABEL • ZEE NEWS"}
-                            text={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
+                            text={"orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius sagittis metus. Nunc molestie gravida ipsum. Aliquam elementum libero ac tortor tincidunt elementum. Nam condimentum id sapien id convallis."}
+                            label={"7 Ayurvedic Herbs You Should Know About | A slice of Healthy Living"}
                         />
                     </div>
                 </div>
             </div>
         </RootLayout>
-    )
-}
+    );
+};
 
-export default PressReleases
+export default PressReleases;
+
+
