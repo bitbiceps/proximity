@@ -71,7 +71,7 @@ const WhyChooseUsData2 = [
 const WhyChooseUs = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
   return (
-    <div className="w-full md:w-[80vw] mx-auto flex flex-col justify-center items-center">
+    <div className="w-full mt-[150px] md:w-[80vw] mx-auto flex flex-col justify-center items-center">
       <PageHeader label={"Why Choose Us"} />
       {/* content  */}
       <div className="mt-[60px] flex flex-wrap justify-center md:justify-between w-full">

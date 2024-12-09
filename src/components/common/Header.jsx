@@ -27,18 +27,18 @@ const Header = ({ isHome }) => {
 
   return (
     <div
-      className={`fixed z-50 left-0 w-full px-14 transition-all duration-700 ${
+      className={`fixed z-50 left-0 w-[100vw] h-auto transition-all duration-700 ${
         isScrolled ? 'bg-app-gray-1 text-white shadow-md top-0 bg-gray-100 opacity-[97%]' : 'top-0'
       }`}
     >
       <div
-        className={`p-4 text-white h-fit mx-auto border-[0.77px] ${
+        className={`p-2 text-white h-auto  border-[0.77px] ${
           isHome ? 'border-app-gray-1' : 'border-app-gray-2'
         } rounded-md transition-all duration-300 ${
-          isScrolled ? 'w-full top-0 border-none rounded-none bg-gray-100 opacity-[100%]' : ''
+          isScrolled ? 'w-full top-0 border-none rounded-none bg-gray-100 opacity-[100%]' : 'w-[100vw]'
         }`}
       >
-        <div className='flex justify-between items-center px-4 py-2'>
+        <div className='flex justify-between px-6 items-center  py-2'>
           {/* Logo */}
           <NavLink to={appRoutes.root}>
             <div className='w-fit font-sans flex items-center justify-center gap-2 text-xl font-semibold leading-4 cursor-pointer'>
