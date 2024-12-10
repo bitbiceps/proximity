@@ -9,6 +9,7 @@ import article1 from "../assets/articles/article1.png";
 import article2 from "../assets/articles/article2.png";
 import article3 from "../assets/articles/article3.png";
 import map1 from "../assets/testing/map1.mp4";
+import { LampDemo } from '../ui/Lamp';
 
 const PressReleases = () => {
     const [isChannelOpen, setIsChannelOpen] = useState(false);
@@ -29,7 +30,8 @@ const PressReleases = () => {
 
     return (
         <RootLayout>
-            <HomeHero vdo={map1} label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} />
+            {/* <HomeHero vdo={map1} label1={"Comprehensive Resources for"} label2={"Your Immigration Journey"} /> */}
+            <LampDemo/>
             <div className='mt-[100px] w-full  md:w-[80vw] mx-auto'>
                 <div className=' flex items-center h-fit justify-between gap-6'>
                     <div className='bg-app-blue-blend flex  h-[65px] items-center justify-center md:w-fit rounded-full px-10 text-black gap-1 w-screen'>
