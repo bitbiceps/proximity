@@ -43,7 +43,7 @@ const Header = ({ isHome }) => {
           <NavLink to={appRoutes.root}>
             <div className='w-fit font-sans flex items-center justify-center gap-2 text-xl font-semibold leading-4 cursor-pointer'>
               <img src={isScrolled ? logoBlue : logo} alt="Logo" />
-              <p className={`${isScrolled ? 'text-[#2324FA]' : ''}`}>PROXIMITY</p>
+              <p className={`${isScrolled ? 'text-[#2324FA]' : 'text-gray-400'}`}>PROXIMITY</p>
             </div>
           </NavLink>
           {/* Navigation Links */}
@@ -54,7 +54,7 @@ const Header = ({ isHome }) => {
                 to={item.to}
                 className={({ isActive }) =>
                   `cursor-pointer hover:text-[#2324FA] active:text-[#2324FA] ${
-                    isActive ? 'text-[#2324FA]' : isScrolled ? 'text-black' : 'text-white'
+                    isActive ? 'text-[#2324FA]' : isScrolled ? 'text-black' : 'text-gray-400'
                   }`
                 }
               >
@@ -65,7 +65,7 @@ const Header = ({ isHome }) => {
           {/* Mobile Menu Icon */}
           <div className='md:hidden w-fit h-fit justify-center items-center'>
             <CiMenuFries
-              className={`text-3xl ${isScrolled ? 'text-black' : 'text-white'}`}
+              className={`text-3xl ${isScrolled ? 'text-black' : 'text-gray-400'}`}
             />
           </div>
         </div>
