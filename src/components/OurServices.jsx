@@ -114,7 +114,7 @@ const Card = ({ service, nextText }) => (
       </div>
       <h2 className="text-[48px] font-bold leading-tight mb-4">{service.title}</h2>
       <p className="text-[18px] font-sans font-medium w-[80%] leading-relaxed">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus totam fugit omnis cumque, rem ab quaerat vero expedita necessitatibus nobis numquam veniam, porro velit illo sapiente quasi.      </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus totam fugit omnis cumque, rem ab quaerat vero expedita necessitatibus nobis numquam veniam, porro velit illo sapiente quasi.      </p>
     </div>
     <div className="flex justify-between items-end w-full px-4 transition-all duration-300 flex-col">
       <p className="text-sm font-light mb-4 w-[42%] text-right">{nextText}</p>
