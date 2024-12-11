@@ -114,4 +114,8 @@ export const LampContainer = ({ children, className }) => {
       </div>
     </div>
   );
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> dev

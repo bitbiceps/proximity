@@ -23,7 +23,7 @@ const Home = () => {
         {/* <Journals /> */}
         <WhyChooseUs />
         <OurServices />
-        <TailorPR />
+        {/* <TailorPR /> */}
         <BrandsAuthority />
         <SuccessStory />
         <PRStrategy />
