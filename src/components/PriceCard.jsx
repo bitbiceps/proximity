@@ -4,7 +4,7 @@ import ButtonVisa from './common/ButtonVisa/ButtonVisa'
 
 const PriceCard = () => {
     return (
-        <div className='h-[500px] w-[350px] bg-[#56FEFE] rounded-3xl text-center  px-8 py-12 cursor-pointer hover:scale-110 transition-all duration-500'>
+        <div className='min-h-[500px] max-h-fit w-[350px] bg-[#56FEFE] rounded-3xl text-center  px-8 py-12 cursor-pointer hover:scale-110 transition-all duration-500'>
             <p className='text-4xl font-bold text-app-blue-1'>
                 BASIC
             </p>
@@ -24,7 +24,7 @@ const PriceCard = () => {
                 </ul>
             </div>
             <div className='mt-3 '>
-                <ButtonVisa text={"Explore in Detail"} width='190px' />
+                <ButtonVisa text={"Explore in Detail"} width='200px' />
             </div>
         </div>
     )

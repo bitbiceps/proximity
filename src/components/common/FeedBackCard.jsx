@@ -5,7 +5,7 @@ const FeedBackCard = () => {
   const fullStars = Math.floor(4); // Number of full stars
   const emptyStars = 5 - fullStars; // Number of empty stars
   return (
-    <div className="w-[400px] rounded-xl overflow-hidden shadow-2xl">
+    <div className="mx-auto w-[70vw] sm:w-[60vw] md:w-[50vw] lg:w-[32vw] xl:w-[26vw] 2xl:w-[22vw]  rounded-xl overflow-hidden shadow-2xl">
       <div className="flex items-center gap-4 px-8 mt-6">
         <div className="w-fit h-fit">
           {/* Render full stars */}
@@ -34,9 +34,9 @@ const FeedBackCard = () => {
           navigate.
         </p>
       </div>
-      <div className="relative">
-        <img src={vector} alt="Vector" />
-        <div className="absolute top-20 left-5 w-full flex items-center gap-4">
+      <div className="relative overflow-hidden">
+        <img src={vector} alt="Vector" className="w-full" />
+        <div className="absolute top-20 left-5 lg:top-12 xl:top-16 w-full flex items-center gap-4">
           <div className="flex items-center justify-center bg-white text-app-blue-2 font-bold rounded-full w-16 h-16 text-2xl">
             MW
           </div>

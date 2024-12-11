@@ -12,13 +12,13 @@ const Feedback = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <div className="w-full md:w-[75vw] mx-auto mt-[100px]">
+    <div className="w-full xl:w-[80vw] mx-auto mt-[100px]">
       <p className="text-5xl text-center">What Our Customers Are Saying</p>
       <div className="relative overflow-visible mt-[50px] group">
         {/* Carousel Container */}
 
         <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
+          modules={[Navigation, Autoplay]}
           spaceBetween={20}
           loop={true}
           autoplay={{
@@ -29,12 +29,12 @@ const Feedback = () => {
             prevEl: prevRef.current,
             nextEl: nextRef.current,
           }}
-          onBeforeInit={(swiper) => {
-            // Assign navigation refs
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-          }}
-          pagination={{ clickable: true }}
+          // onBeforeInit={(swiper) => {
+          //   // Assign navigation refs
+          //   swiper.params.navigation.prevEl = prevRef.current;
+          //   swiper.params.navigation.nextEl = nextRef.current;
+          // }}
+          // pagination={{ clickable: true }}
           speed={1000}
           className="w-full"
           breakpoints={{
@@ -44,25 +44,19 @@ const Feedback = () => {
             },
             // For tablets (640px)
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
             1024: {
               slidesPerView: 3,
             },
           }}
         >
-          <SwiperSlide>
-            <FeedBackCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <FeedBackCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <FeedBackCard />
-          </SwiperSlide>
-          <SwiperSlide>
-            <FeedBackCard />
-          </SwiperSlide>
+          {Array(3).fill(0).map((item, index) => (
+            <SwiperSlide key={index}>
+              <FeedBackCard />
+            </SwiperSlide>
+          ))}
+
         </Swiper>
       </div>
     </div>
