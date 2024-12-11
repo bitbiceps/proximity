@@ -18,7 +18,7 @@ const Article = ({ img, label, text }) => {
                 </div>
             </div>
             <div className='w-full mt-[22px] flex justify-end'>
-                <button className='w-[200px] h-[60px] rounded-full text-xl bg-app-aqua-3 hover:opacity-75 cursor-pointer transition-all duration-500'>Read Article</button>
+                <button className=' px-[25px] py-[10px] rounded-full text-[18px] bg-app-aqua-3 hover:opacity-75 cursor-pointer transition-all duration-500'>Read Article</button>
             </div>
         </div>
     )
