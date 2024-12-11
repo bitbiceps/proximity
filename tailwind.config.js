@@ -45,6 +45,7 @@ export default {
       },
       backgroundImage: {
         'map-bg': `url(/src/assets/map-custom.png)`,
+        'map-bg-2': `url(/src/assets/map/map2.png)`,
         support1: `url(/src/assets/card-image.svg)`,
         support2: `url(/src/assets/support2.png)`,
         support3: `url(/src/assets/support3.png)`,

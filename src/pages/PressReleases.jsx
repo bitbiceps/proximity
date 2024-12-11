@@ -117,8 +117,4 @@ const PressReleases = () => {
 };
 
 export default PressReleases;
-<<<<<<< HEAD
-
-=======
->>>>>>> dev
 

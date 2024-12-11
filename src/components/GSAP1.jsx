@@ -30,7 +30,7 @@ const GSAP1 = () => {
         <div className='w-full  h-screen mt-0 flex justify-center'>
             <div
                 ref={containerRef}
-                className="h-screen   bg-map-bg-2 rounded-none w-full bg-no-repeat overflow-hidden  bg-cover text-white font-bold flex justify-center items-center"
+                className="h-screen   bg-map-bg rounded-none w-full bg-no-repeat overflow-hidden  bg-cover text-white font-bold flex justify-center items-center"
             >
                 <div className='w-fit  h-[50%] text-center flex flex-col items-center justify-center gap-12'>
                     <p className='text-[52px] leading-[71.29px]'>
