@@ -53,7 +53,7 @@ export default {
       },
       animation: {
         'loop-scroll': 'loop-scroll 5s linear infinite',
-        'fade-in-up': 'fade-in-up 500ms ease-in-out forwards', // Custom animation,
+        'fade-in-up': 'fade-in-up 1500ms ease-in-out forwards', // Custom animation,
         'fade-in-visibility': 'fade-in-visibility 3s ease-in-out forwards', // Custom animation
       },
       keyframes: {

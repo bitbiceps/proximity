@@ -8,8 +8,8 @@ export function LampDemo() {
     <LampContainer>
       {/* Animated heading */}
       <motion.h1
-        initial={{ opacity: 0.5, y: 200 }} // Initial state: partially visible and offset downwards.
-        whileInView={{ opacity: 1, y: 70 }} // Target state: fully visible and in its final position.
+        initial={{ opacity: 0.4, y: 200 }} // Initial state: partially visible and offset downwards.
+        whileInView={{ opacity: 1, y: 20 }} // Target state: fully visible and in its final position.
         transition={{
           delay: 0.3, // Delay before the animation starts.
           duration: 0.8, // Total animation duration.
@@ -25,9 +25,10 @@ export function LampDemo() {
 
 export const LampContainer = ({ children, className }) => {
   return (
-    <div
+    <div className="">
+      <div
       className={cn(
-        "pt-[100px] relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
+        "mt-[-40px] relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full rounded-md z-0",
         className // Allow additional styles to be passed as props.
       )}
     >
@@ -93,7 +94,7 @@ export const LampContainer = ({ children, className }) => {
         ></motion.div>
 
         {/* Thin glowing horizontal line */}
-        <motion.div
+        {/* <motion.div
           initial={{ width: "15rem" }} // Start narrow.
           whileInView={{ width: "40rem" }} // Expand when in view.
           transition={{
@@ -102,7 +103,7 @@ export const LampContainer = ({ children, className }) => {
             ease: "easeInOut",
           }}
           className="absolute inset-auto z-50 h-0.5 w-[40rem] -translate-y-[7rem] bg-cyan-400"
-        ></motion.div>
+        ></motion.div> */}
 
         {/* Foreground masking layer */}
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950"></div>
@@ -112,6 +113,7 @@ export const LampContainer = ({ children, className }) => {
       <div className="relative z-50 flex -translate-y-80 flex-col items-center  px-5">
         {children} {/* Children passed into the container */}
       </div>
+    </div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import PressReleases from './pages/PressReleases'
 import InnerCountry from './pages/InnerCountry'
 import ProductPricing from './pages/ProductPricing'
 import OurServices from "./components/OurServices"
+import HomeLoading from './components/common/loading/HomeLoading'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path={appRoutes.inner_country.static} Component={InnerCountry} />
         <Route path={appRoutes.root} Component={Home} />
         <Route path={appRoutes.productPricing} Component={ProductPricing} />
+        <Route path={appRoutes.loading} Component={HomeLoading} />
       </Routes>
     </div>
   )

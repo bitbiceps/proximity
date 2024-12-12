@@ -27,41 +27,49 @@ const Header = ({ isHome }) => {
 
   return (
     <div
-      className={`fixed z-50 left-0 w-[100vw] h-auto transition-all duration-700 ${
-        isScrolled ? 'bg-app-gray-1 text-white shadow-md top-0 bg-gray-100 opacity-[97%]' : 'top-0'
-      }`}
+      className={`fixed z-50 left-0 w-[100vw] h-auto transition-all duration-700 ${isScrolled ? ' text-white shadow-md top-0 bg-black opacity-[77%]' : 'top-0'
+        }`}
     >
       <div
-        className={`p-2 text-white h-auto  border-[0.77px] ${
-          isHome ? 'border-app-gray-1' : 'border-app-gray-2'
-        } rounded-md transition-all duration-300 ${
-          isScrolled ? 'w-full top-0 border-none rounded-none bg-gray-100 opacity-[100%]' : 'w-[100vw]'
-        }`}
+        className={`p-2 bg-black text-white h-auto  border-[0.77px] ${isHome ? 'border-app-gray-1' : 'border-app-gray-2'
+          } transition-all duration-300 ${isScrolled ? 'w-full top-0 border-none rounded-none  opacity-[100%]' : 'w-[100vw]'
+          }`}
       >
         <div className='flex justify-between px-6 items-center  py-2'>
           {/* Logo */}
           <NavLink to={appRoutes.root}>
             <div className='w-fit font-sans flex items-center justify-center gap-2 text-xl font-semibold leading-4 cursor-pointer'>
-              <img src={isScrolled ? logoBlue : logo} alt="Logo" />
-              <p className={`${isScrolled ? 'text-[#2324FA]' : 'text-gray-400'}`}>PROXIMITY</p>
+              <img src={logo} alt="Logo" />
+              <p className={`${isScrolled ? 'text-white' : 'text-white'}`}>PROXIMITY</p>
             </div>
           </NavLink>
           {/* Navigation Links */}
-          <div className='w-fit hidden gap-10 justify-center items-center text-[14px] font-serif font-semibold md:flex'>
-            {headerLinks.map((item, idx) => (
-              <NavLink
-                key={item.label + idx}
-                to={item.to}
-                className={({ isActive }) =>
-                  `cursor-pointer hover:text-[#2324FA] active:text-[#2324FA] ${
-                    isActive ? 'text-[#2324FA]' : isScrolled ? 'text-black' : 'text-gray-400'
-                  }`
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </div>
+          <div className="w-fit hidden gap-10 justify-center items-center text-[14px] font-serif font-semibold md:flex">
+  {headerLinks.map((item, idx) => (
+    <NavLink
+      key={item.label + idx}
+      to={item.to}
+      className={({ isActive }) =>
+        `group cursor-pointer ${
+          isActive ? 'text-white ' : isScrolled ? 'text-white' : 'text-white'
+        }`
+      }
+    >
+      {({ isActive }) => (
+        <>
+          {item.label}
+          <div
+            className={`h-[2px] mt-[2px] bg-white transition-all duration-300 ${
+              isActive ? 'w-full' : 'w-0 group-hover:w-full'
+            }`}
+          ></div>
+        </>
+      )}
+    </NavLink>
+  ))}
+</div>
+
+
           {/* Mobile Menu Icon */}
           <div className='md:hidden w-fit h-fit justify-center items-center'>
             <CiMenuFries
