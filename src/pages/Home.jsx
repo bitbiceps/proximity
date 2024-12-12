@@ -12,7 +12,7 @@ import PRStrategy from "../components/PRStrategy";
 import GSAP1 from "../components/GSAP1";
 import OurServices from "../components/OurServices";
 import { MainHero } from "../components/MainHero";
-import HomeLoading from "../components/common/HomeLoading";
+import HomeLoading from "../components/common/loading/HomeLoading";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +21,7 @@ const Home = () => {
     // Simulate a loading delay of at least 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 5460);
 
     return () => clearTimeout(timer);
   }, []);

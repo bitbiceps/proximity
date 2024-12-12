@@ -7,6 +7,7 @@ export const appRoutes = {
         dynamic: (country) => (`/country/${country}`)
     },
     productPricing: "/product-and-pricig",
+    loading: "/loading",
 
 }
 

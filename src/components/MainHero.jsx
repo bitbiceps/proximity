@@ -25,15 +25,17 @@ export const MainHero = () => {
         };
     }, []);
     return (
-        <div className='w-full h-[100vh]  px-[102px] flex flex-row'>
+        <div className='w-full h-[100vh]  px-[102px] flex flex-row bg-[#eee] '>
             <div className='w-[50%] '>
 
-                <div className=' text-black md:text-[46px] mt-[150px] leading-[80px] mt animate-fade-in-up '>
+                <div className=' text-black md:text-[46px] mt-[220px] leading-[60px] animate-fade-in-up '>
                     <p className='font-semibold'>Unlocking your</p>
-                    <p className=' font-semibold' >PR Potential with</p>
-                    <p className='italic font-semibold'>Expertise and Innovation</p>
+                    {/* <p className=' font-semibold' >PR Potential with</p> */}
+                    <p className=' font-semibold' > achievement with us</p>
+                    {/* <p className='italic font-semibold'>Expertise and Innovation</p> */}
                 </div>
-                <div className=' mt-[50px] flex justify-start items-center lg:gap-[72px] md:gap-[72px] gap-[30px] '>
+                <p className='text-black md:text-[22px] leading-[50px] animate-fade-in-up font-medium'>Proximity is the place for your PR solution. </p>
+                <div className=' mt-[60px] flex justify-start items-center lg:gap-[72px] md:gap-[72px] gap-[30px] '>
                     <button className=' border-black border-[1px] rounded-full px-[50px] py-[18px] text-black lg:text-[24px] text-[18px] font-medium hover:bg-black hover:text-white '>Get Started</button>
                     <button className=' border-black border-[1px] rounded-full px-[50px] py-[18px] text-black lg:text-[24px] text-[18px] font-medium hover:bg-black hover:text-white '>Our Services</button>
                 </div>
