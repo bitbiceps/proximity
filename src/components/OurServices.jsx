@@ -5,17 +5,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 
 const services = [
-  { title: "PR for immigration" },
-  { title: "Tech PR Agency for Startups" },
-  { title: "Publishing Services" },
-  { title: "Arts & Entertainment PR" },
-  { title: "PR For Businesses" },
-  { title: "Health and Medtech PR" },
-  { title: "B2B PR" },
+  "PR for immigration",
+  "Tech PR Agency for Startups",
+  "Publishing Services",
+  "Arts & Entertainment PR",
+  "PR For Businesses",
+  "Health and Medtech PR",
+  "B2B PR",
 ];
 
 const OurServices = () => {
-  const [active, setActive] = useState(0);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
@@ -35,14 +34,14 @@ const OurServices = () => {
         {/* Service List */}
         <div className="w-full h-fit lg:h-full lg:w-[40%]">
           <div className="justify-between hidden lg:flex flex-wrap gap-4 max-w-md mx-auto">
-            {services.map((item, idx) => (
+            {services.map((title, idx) => (
               <div
                 key={idx}
                 onClick={() => handleSlideTo(idx)}
                 className="flex flex-col w-fit sm:w-[calc(50%-1rem)] mb-14 cursor-pointer hover:text-app-gray-4"
               >
                 <p className="text-sm sm:text-base md:text-lg lg:text-[24px] mb-2">0{idx + 1}</p>
-                <p className="font-serif font-semibold text-base sm:text-lg md:text-xl lg:w-[90%] lg:text-[24px]">{item.title}</p>
+                <p className="font-serif font-semibold text-base sm:text-lg md:text-xl lg:w-[90%] lg:text-[24px]">{title}</p>
               </div>
             ))}
           </div>
@@ -56,7 +55,7 @@ const OurServices = () => {
             loop
             autoplay={{ delay: 1500, disableOnInteraction: false }}
             speed={1000}
-            className="w-full"
+            className="w-full h-full"
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,
@@ -72,11 +71,11 @@ const OurServices = () => {
               0: { slidesPerView: 1 },
             }}
           >
-            {services.map((service, idx) => (
-              <SwiperSlide key={idx} className="flex justify-center h-full w-full">
+            {services.map((title, idx) => (
+              <SwiperSlide key={idx} className="flex justify-center h-full w-full shadow-2xl">
                 <Card
-                  service={service}
-                  nextText={services[(idx + 1) % services.length].title}
+                  serviceTitle={title}
+                  nextTitle={services[(idx + 1) % services.length]}
                 />
               </SwiperSlide>
             ))}
@@ -84,18 +83,10 @@ const OurServices = () => {
 
           {/* Navigation Buttons */}
           <div className="w-full flex justify-between px-4 py-2 bg-purple-500 text-white">
-            <button
-              onClick={() => setActive((prev) => (prev === 0 ? services.length - 1 : prev - 1))}
-              ref={prevRef}
-              className="p-2 rounded-full"
-            >
+            <button ref={prevRef} className="p-2 rounded-full">
               <FaChevronLeft size={30} />
             </button>
-            <button
-              onClick={() => setActive((prev) => (prev === services.length - 1 ? 0 : prev + 1))}
-              ref={nextRef}
-              className="p-2 rounded-full"
-            >
+            <button ref={nextRef} className="p-2 rounded-full">
               <FaChevronRight size={30} />
             </button>
           </div>
@@ -105,19 +96,19 @@ const OurServices = () => {
   );
 };
 
-// Card Component
-const Card = ({ service, nextText }) => (
-  <div className="bg-purple-500 shadow-2xl text-white p-8 h-full flex flex-col justify-between w-full relative">
+const Card = ({ serviceTitle, nextTitle }) => (
+  <div className="bg-purple-500 text-white p-8 h-full flex flex-col justify-between w-full relative">
     <div className="w-full">
       <div className="mb-6 w-full">
         <img src={camera} alt="camera" />
       </div>
-      <h2 className="text-[48px] font-bold leading-tight mb-4">{service.title}</h2>
+      <h2 className="text-[48px] font-bold leading-tight mb-4">{serviceTitle}</h2>
       <p className="text-[18px] font-sans font-medium w-[80%] leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus totam fugit omnis cumque, rem ab quaerat vero expedita necessitatibus nobis numquam veniam, porro velit illo sapiente quasi.      </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus totam fugit omnis cumque, rem ab quaerat vero expedita necessitatibus nobis numquam veniam, porro velit illo sapiente quasi.
+      </p>
     </div>
     <div className="flex justify-between items-end w-full px-4 transition-all duration-300 flex-col">
-      <p className="text-sm font-light mb-4 w-[42%] text-right">{nextText}</p>
+      <p className="text-sm font-light mb-4 w-[42%] text-right">{nextTitle}</p>
     </div>
   </div>
 );
