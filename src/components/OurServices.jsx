@@ -72,10 +72,10 @@ const OurServices = () => {
         </div>
 
         {/* Slider Section */}
-        <div className="w-fit lg:h-full h-fit lg:w-[36%] flex flex-col">
+        <div className="w-fit lg:h-full h-fit lg:w-[30%] flex flex-col">
           <Swiper
             direction="vertical"
-            modules={[Navigation, Autoplay]}
+            modules={[Navigation]}
             loop
             autoplay={{ delay: 1500, disableOnInteraction: false }}
             speed={1000}
