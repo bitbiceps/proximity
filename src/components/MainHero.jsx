@@ -25,7 +25,7 @@ export const MainHero = () => {
         };
     }, []);
     return (
-        <div className='w-full h-[100vh]  px-[102px] flex flex-row bg-[#eee] '>
+        <div className='w-full h-[100vh]  px-[102px] flex flex-row bg-white '>
             <div className='w-[50%] '>
 
                 <div className=' text-black md:text-[46px] mt-[220px] leading-[60px] animate-fade-in-up '>

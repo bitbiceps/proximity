@@ -21,7 +21,7 @@ const Home = () => {
     // Simulate a loading delay of at least 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 5460);
+    }, 4660);
 
     return () => clearTimeout(timer);
   }, []);

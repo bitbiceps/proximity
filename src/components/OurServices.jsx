@@ -14,6 +14,30 @@ const services = [
   "B2B PR",
 ];
 
+const servicesData = [
+  {title: "PR for immigration",
+    content: "Our customized PR strategies elevate your immigration services, helping you build trust and credibility with audiences around the world.",
+  },
+  {title: "Tech PR Agency for Startups",
+    content: "Our tech PR solutions help you amplify your company's presence, increasing visibility and influence in the dynamic tech industry through strategic publications.",
+  },
+  {title: "Publishing Services",
+    content: "Our publishing PR services help you shape compelling narratives and share them effectively across diverse platforms, reaching the target audiences.",
+  },
+  {title: "Arts & Entertainment PR",
+    content: "Our PR services for artists and entertainment are designed to craft compelling campaigns that elevate their visibility and recognition in the industry.",
+  },
+  {title: "PR For Businesses",
+    content: "Our PR services are crafted to nurture the company’s reputation, promote valuable relationships, and drive growth through thoughtful media engagement. ",
+  },
+  {title : "Health and Medtech PR",
+    content:"Our health and medical research PR services help organizations gain media coverage. It spotlights the success that truly matters to your audience. ",
+  },
+  {title: "B2B PR",
+    content: "Our B2B PR services are customized to enhance your brand’s authority, build valuable business connections, and position you as a trusted leader in your industry.",
+  },
+];
+
 const OurServices = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -24,8 +48,8 @@ const OurServices = () => {
   };
 
   return (
-    <div className="h-fit lg:h-screen justify-center items-center flex capitalize mt-[100px] lg:mt-0">
-      <div className="h-fit lg:h-[70vh] w-[100vw] lg:w-[80vw] flex justify-between items-center flex-col lg:flex-row px-12">
+    <div className=" h-fit lg:h-screen justify-center items-center flex capitalize lg:mt-0">
+      <div className="h-fit lg:h-[660px] w-[100vw] lg:w-[80vw] flex justify-between items-center flex-col lg:flex-row ">
         {/* Title */}
         <div className="w-full h-fit lg:h-[75%] lg:w-[20%] flex mb-[60px] lg:mb-0">
           <p className="text-[52px] leading-0 lg:w-[3ch] mb-4 lg:mb-0 font-bold">Our Services</p>
@@ -38,7 +62,7 @@ const OurServices = () => {
               <div
                 key={idx}
                 onClick={() => handleSlideTo(idx)}
-                className="flex flex-col w-fit sm:w-[calc(50%-1rem)] mb-14 cursor-pointer hover:text-app-gray-4"
+                className="flex flex-col w-fit sm:w-[calc(50%-1rem)] mb-10 cursor-pointer hover:text-app-gray-4"
               >
                 <p className="text-sm sm:text-base md:text-lg lg:text-[24px] mb-2">0{idx + 1}</p>
                 <p className="font-serif font-semibold text-base sm:text-lg md:text-xl lg:w-[90%] lg:text-[24px]">{title}</p>
@@ -48,7 +72,7 @@ const OurServices = () => {
         </div>
 
         {/* Slider Section */}
-        <div className="w-fit lg:h-full h-fit lg:w-[32%] flex flex-col">
+        <div className="w-fit lg:h-full h-fit lg:w-[36%] flex flex-col">
           <Swiper
             direction="vertical"
             modules={[Navigation, Autoplay]}
@@ -71,10 +95,11 @@ const OurServices = () => {
               0: { slidesPerView: 1 },
             }}
           >
-            {services.map((title, idx) => (
+            {servicesData.map((service, idx) => (
               <SwiperSlide key={idx} className="flex justify-center h-full w-full shadow-2xl">
                 <Card
-                  serviceTitle={title}
+                  serviceContent={service.content}
+                  serviceTitle={service.title}
                   nextTitle={services[(idx + 1) % services.length]}
                 />
               </SwiperSlide>
@@ -96,7 +121,7 @@ const OurServices = () => {
   );
 };
 
-const Card = ({ serviceTitle, nextTitle }) => (
+const Card = ({serviceContent, serviceTitle, nextTitle }) => (
   <div className="bg-purple-500 text-white p-8 h-full flex flex-col justify-between w-full relative">
     <div className="w-full">
       <div className="mb-6 w-full">
@@ -104,11 +129,11 @@ const Card = ({ serviceTitle, nextTitle }) => (
       </div>
       <h2 className="text-[48px] font-bold leading-tight mb-4">{serviceTitle}</h2>
       <p className="text-[18px] font-sans font-medium w-[80%] leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo delectus totam fugit omnis cumque, rem ab quaerat vero expedita necessitatibus nobis numquam veniam, porro velit illo sapiente quasi.
+        {serviceContent}
       </p>
     </div>
     <div className="flex justify-between items-end w-full px-4 transition-all duration-300 flex-col">
-      <p className="text-sm font-light mb-4 w-[42%] text-right">{nextTitle}</p>
+      <p className="text-sm font-light mb-4 w-[55%] text-right">{nextTitle}</p>
     </div>
   </div>
 );
